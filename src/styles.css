@@ -1,16 +1,44 @@
-.navbar{
+nav {
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
-    justify-content:flex-end;
-    align-items: flex-start;
-    align-content:flex-end ;
-    
+    flex-wrap: wrap;
+    justify-content: flex-end;
 }
-.navbaritem{
-    margin:5px 5px 5px 5px;
+
+nav>.home {
+    flex-grow: 1;
 }
-#home{
+
+nav>.home img {
+    width: 40px;
+}
+
+.navbaritem {
+    margin: 5px 5px 5px 5px;
+}
+
+#home {
+    border-radius: 8px;
 
 }
 
+section#blog {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+
+}
+
+aside {
+    position: fixed;
+    top: 400px;
+    right: 0px;
+}
+
+footer {}
