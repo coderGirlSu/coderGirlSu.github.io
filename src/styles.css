@@ -1,5 +1,5 @@
 body{
-    background-color: #d3d0c9;
+    background-color: #ffffff;
 
 
 }
@@ -14,7 +14,7 @@ nav {
     
 }
 nav a{
-    color: #ffffff;
+    color: #000000;
 
 }
 nav>.home {
@@ -43,6 +43,19 @@ section {
 section .main-image{
     width: 100%;
 }
+
+.project-layout {
+    display: flex;
+}
+
+.h-scroll{
+    display:flex;
+    overflow: scroll;
+}
+.h-scroll > img {
+    width: 70%;
+}
+
 
 /*section#blog {
     display: flex;
@@ -81,25 +94,27 @@ aside {
 .watermark-vertical {
     position: relative;
     z-index: 1;
-    color: #ffffff;
-    top: 500px;
+    color: #c2c2c2;
+    top: 580px;
     left: 20px;
     transform: rotate(-90deg);
     transform-origin: left;
     font-size: 4em;
     text-align: right; 
+    font-size: 80px;
     
-    width: 400px;
+    width: 450px;
    
 }
 
 .watermark-horizontal{
     position: relative;
     z-index: 1;
-    color: #ffffff;
+    color: #c2c2c2;
     right:20px;
     font-size: 4em;
     text-align: right; 
+    font-size: 80px;
     
 }
 
