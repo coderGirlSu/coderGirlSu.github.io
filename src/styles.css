@@ -3,7 +3,11 @@ body{
 
 
 }
-
+@media screen and (max-width: 800px){
+    .navbaritem {
+        display: none;
+    }
+}
 nav {
     
     display: flex;
@@ -13,6 +17,18 @@ nav {
     right: 0px;
     
 }
+@media screen and (min-width:800px){
+    nav .burgermenu img{
+        display: none;
+    }
+
+}
+
+nav .burgermenu img{
+    width:40px;
+}
+
+
 nav a{
     color: #000000;
 
@@ -58,14 +74,14 @@ section .main-image{
 }
 
 .project-text{
-    gflex-grow: 1;
+    
     text-align: left;
     
 }
 
 .project-image{
     text-align: right;
-    hflex-grow: 1;
+    
 }
 .project-image img{
     max-width: 100%;
@@ -85,23 +101,13 @@ section .main-image{
 
 
 
-
-
-
-
-
-
-.sidenav {
-    display: flex;
-    flex-direction: column;
-  
-
-}
-
-aside {
+.arrownav img {
+    width: 80px;
+    size: 10px;
     position: fixed;
-    top: 400px;
+    top: 850px;
     right: 0px;
+    z-index: 2;
 }
 
 .watermark-vertical {
@@ -136,8 +142,3 @@ footer {
     
 }
 
-@media screen and (max-width: 800px){
-    .sidenav {
-        display: none;
-    }
-}
