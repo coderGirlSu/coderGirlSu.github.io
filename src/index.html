@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title> SuZhang Portfolio</title>
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
@@ -15,17 +16,24 @@
         <div class="navbaritem"><a href="#about">ABOUT</a></div>
         <div class="navbaritem"><a href="#project">PROJECT</a></div>
         <div class="navbaritem"><a href="#blog">BLOG</a></div>
-        <div class="navbaritem"><a href="#contact">CONTACT</a></div>
+        <div class="navbaritem"><a href="#footer">CONTACT</a></div>
 
-        <div class="burgermenu">
-            <a href="#"><img src="burgermenu.png" alt="menu"></a>
+        <div class="burger-icon">
+            <img src="menu.png" alt="menu" onclick="burgerMenu()">
         </div>
 
-        
+        <div class="burger-menu" id="burger-menu">
+            <div class="menuitem"><a href="#about">ABOUT</a></div>
+            <div class="menuitem"><a href="#project">PROJECT</a></div>
+            <div class="menuitem"><a href="#blog">BLOG</a></div>
+            <div class="menuitem"><a href="#footer">CONTACT</a></div>
+        </div>
 
 
 
     </nav>
+
+
 
 
     <section id="about">
@@ -76,63 +84,63 @@
 
     <section id="blog">
         <div class="watermark-vertical">BLOG</div>
-        <h1>BLOG</h1>
+
 
         <!-- Blog listing component -->
         <div class="blog-list-component">
             <h1>Cooklang - Managing Recipes in Git</h1>
-            <div>
-                01/01/22 <a href="article1.html">View More</a>
+            <div class="viewmore">
+                01/01/2022 <a href="article1.html">View More</a>
             </div>
             <p>Cooklang is like markdown for recipes. It lets you write recipes
                 in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
             </p>
-            <hr class="line" />
+            <hr />
         </div>
         <!-- Blog listing component -->
         <div class="blog-list-component">
             <h1>Cooklang - Managing Recipes in Git</h1>
-            <div>
-                01/01/22 <a href="article2.html">View More</a>
+            <div class="viewmore">
+                01/01/2022 <a href="article2.html">View More</a>
 
             </div>
             <p>Cooklang is like markdown for recipes. It lets you write recipes
                 in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
             </p>
-            <hr class="line" />
+            <hr />
         </div>
         <!-- Blog listing component -->
         <div class="blog-list-component">
             <h1>Cooklang - Managing Recipes in Git</h1>
-            <div>
-                01/01/22 <a href="article3.html">View More</a>
+            <div class="viewmore">
+                01/01/2022 <a href="article3.html">View More</a>
             </div>
             <p>Cooklang is like markdown for recipes. It lets you write recipes
                 in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
             </p>
-            <hr class="line" />
+            <hr />
         </div>
         <!-- Blog listing component -->
         <div class="blog-list-component">
             <h1>Cooklang - Managing Recipes in Git</h1>
-            <div>
-                01/01/22 <a href="article4.html">View More</a>
+            <div class="viewmore">
+                01/01/2022 <a href="article4.html">View More</a>
             </div>
             <p>Cooklang is like markdown for recipes. It lets you write recipes
                 in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
             </p>
-            <hr class="line" />
+            <hr />
         </div>
         <!-- Blog listing component -->
         <div class="blog-list-component">
             <h1>Cooklang - Managing Recipes in Git</h1>
-            <div>
-                01/01/22 <a href="article5.html">View More</a>
+            <div class="viewmore">
+                01/01/2022 <a href="article5.html">View More</a>
             </div>
             <p>Cooklang is like markdown for recipes. It lets you write recipes
                 in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
             </p>
-            <hr class="line" />
+            <hr />
         </div>
 
 
@@ -160,16 +168,21 @@
 
 
 
-    <footer>
-
+    <footer id="footer">
         <div class="watermark-horizontal">CONTACT</div>
+        <div class="footer-component">
+            <img class="footer-image" src="crossing copy.jpg" alt="footer-image" />
+            <div class="footer-icons">
+                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="linkedin.png"
+                            atl="linkedin" /></a></div>
+                <div><a href="https://github.com/coderGirlSu"><img src="github.png" atl="github" /></a></div>
+                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="email.png" atl="email" /></a>
+                </div>
+                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="resume.png" atl="resume" /></a>
+                </div>
+            </div>
 
-        <img class="footer-image" src="crossing copy.jpg" alt="footer-image" />
-
-
-
-
-
+        </div>
 
     </footer>
 
@@ -177,7 +190,7 @@
 
 
 
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>

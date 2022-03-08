@@ -1,38 +1,80 @@
-body{
+body {
     background-color: #ffffff;
 
 
 }
-@media screen and (max-width: 800px){
+
+@media screen and (max-width: 800px) {
     .navbaritem {
         display: none;
     }
 }
+
 nav {
-    
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
     right: 0px;
-    
+
 }
-@media screen and (min-width:800px){
-    nav .burgermenu img{
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    color:#000000;
+}
+
+a:visited{
+    color:rgb(192, 145, 166);
+}
+a:hover{
+    text-decoration: underline;
+
+}
+
+@media screen and (min-width:800px) {
+    nav .burger-icon img {
         display: none;
     }
 
 }
 
-nav .burgermenu img{
-    width:40px;
+nav .burger-icon img {
+    width: 40px;
+}
+
+nav .burger-menu {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    right: 20px;
+    top: 30px;
+    background-color: #dadada3a;
 }
 
 
-nav a{
+
+nav .visible {
+    display:block;
+}
+
+
+nav .menuitem {
+    padding: 15px;
+}
+
+
+
+
+
+nav a {
     color: #000000;
 
 }
+
 nav>.home {
     flex-grow: 1;
 }
@@ -52,41 +94,54 @@ nav>.home img {
 
 section {
     padding: 20px;
-   
+
     margin-left: -8px;
     margin-right: -15px;
     min-height: 400px;
 }
-section .main-image{
+
+section .main-image {
     width: 100%;
 }
 
 .blog-list-component {
     position: relative;
     z-index: 2;
-}
-
-
-
-.project-container{
-   display: flex;
-   align-items: flex-end;
-}
-
-.project-text{
-    
-    text-align: left;
-    
-}
-
-.project-image{
     text-align: right;
-    
 }
-.project-image img{
+.blog-list-component p{
+    margin-right: 0;
+    max-width: 60%; 
+    display: inline-block;
+
+}
+.blog-list-component hr {
+    margin-right: 0;
+    max-width: 60%;
+   
+}
+
+
+.project-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.project-text {
+
+    text-align: left;
+
+}
+
+.project-image {
+    text-align: right;
+
+}
+
+.project-image img {
     max-width: 100%;
 
-    
+
 }
 
 
@@ -113,32 +168,55 @@ section .main-image{
 .watermark-vertical {
     position: relative;
     z-index: 1;
-    color: #c2c2c2;
+    color:rgb(224, 224, 224);
     top: 580px;
     left: 20px;
     transform: rotate(-90deg);
     transform-origin: left;
     font-size: 4em;
-    text-align: right; 
+    text-align: right;
     font-size: 80px;
-    
+
     width: 450px;
-   
+
 }
 
-.watermark-horizontal{
+
+.viewmore {
+    font-size: 20px;
+}
+
+.watermark-horizontal {
     position: relative;
     z-index: 1;
-    color: #c2c2c2;
-    right:20px;
+    color:rgb(214, 186, 199);
+    right: 20px;
     font-size: 4em;
-    text-align: right; 
+    text-align: right;
     font-size: 80px;
-    
+
 }
 
-footer {
-    margin-top: 1000px;
-    
+/* Footer component styles */
+.footer-component .footer-image, .footer-component .footer-icons {
+    position: absolute;
+    width: 100%;
+}
+.footer-component .footer-image {
+    min-height: 100px;
+}
+.footer-component .footer-icons {
+    display: flex;
+}
+.footer-component .footer-icons div {
+    margin: 20px;
+}
+.footer-component .footer-icons div:hover{
+    transform: scale(1.2);
 }
 
+
+/* Article component styles */
+.article img{
+    width:800px;
+}
