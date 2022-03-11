@@ -9,9 +9,14 @@
     <script src="scripts/index.js" defer></script>
 </head>
 
-<body>
 
+<body>
     <nav id="top">
+        <div class="home">
+            <a href="index.html">
+                SU ZHANG
+            </a>
+        </div>
 
         <div class="navbaritem"><a href="#about">ABOUT</a></div>
         <div class="navbaritem"><a href="#project">PROJECT</a></div>
@@ -29,39 +34,61 @@
             <div class="menuitem"><a href="#footer">CONTACT</a></div>
         </div>
 
-
-
     </nav>
 
 
+    <picture>
+        <source media="(min-width:800px)" srcset="1person-large.jpg">
+        <img class="main-image" src="1person-small.jpg" alt="person-image" />
+    </picture>
 
+
+
+    
 
     <section id="about">
-        <a href="#about"></a>
-        <img class="main-image" src="1person.jpg" alt="main-image" />
-        <div class="watermark-vertical">ABOUT ME</div>
+        <div class="two-column">
+            <h1 class="title-vertical">ABOUT ME</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
+                Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
+                Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
+                Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
+                Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod pariatur dolor quam, qui debitis quisquam
+                voluptas repellendus dolore ab voluptates. Odio natus quo eum consequuntur vel blanditiis est corrupti
+                perferendis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quibusdam repudiandae, dolorem corporis
+                quod,
+                velit odio, aut sint tempora ab sunt quos quo consectetur aliquam? Dolores, voluptate doloremque.
+                Doloribus,
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
+                Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod pariatur dolor quam, qui debitis quisquam
+                voluptas repellendus dolore ab voluptates. Odio natus quo eum consequuntur vel blanditiis est corrupti
+                perferendis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quibusdam repudiandae, dolorem corporis
+                quod,
+                velit odio, aut sint tempora ab sunt quos quo consectetur aliquam? Dolores, voluptate doloremque.
+                Doloribus,
 
-        <h1>ABOUT ME</h1>
-        <p class="blog-list-component">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
-            Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
-            Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
-            Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
-            Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.</p>
+                praesentium!</p>
+
+        </div>
     </section>
 
 
 
 
     <section id="project">
-        <a href="#project"></a>
-        <div class="watermark-horizontal">PROJECT</div>
+        <div class="title-horizontal">PROJECT</div>
         <div class="project-container">
             <div class="project-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia doloribus,
                 temporibus perspiciatis laborum
@@ -71,7 +98,10 @@
             </div>
 
             <div class="project-image">
-                <img src="tree.jpeg" alt="tree" />
+                <picture>
+                    <source media="(min-width:800px)" srcset="tree-large.jpeg">
+                    <img src="tree-small.jpeg" alt="tree" />
+                </picture>
             </div>
         </div>
 
@@ -83,67 +113,81 @@
 
 
     <section id="blog">
-        <div class="watermark-vertical">BLOG</div>
+        <div class="two-column">
+            <h1 class="title-vertical">BLOG</h1>
+
+            <div>
+                <!-- Blog listing component -->
+                <div class="blog-list-component">
 
 
-        <!-- Blog listing component -->
-        <div class="blog-list-component">
-            <h1>Cooklang - Managing Recipes in Git</h1>
-            <div class="viewmore">
-                01/01/2022 <a href="article1.html">View More</a>
-            </div>
-            <p>Cooklang is like markdown for recipes. It lets you write recipes
-                in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
-            </p>
-            <hr />
-        </div>
-        <!-- Blog listing component -->
-        <div class="blog-list-component">
-            <h1>Cooklang - Managing Recipes in Git</h1>
-            <div class="viewmore">
-                01/01/2022 <a href="article2.html">View More</a>
 
-            </div>
-            <p>Cooklang is like markdown for recipes. It lets you write recipes
-                in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
-            </p>
-            <hr />
-        </div>
-        <!-- Blog listing component -->
-        <div class="blog-list-component">
-            <h1>Cooklang - Managing Recipes in Git</h1>
-            <div class="viewmore">
-                01/01/2022 <a href="article3.html">View More</a>
-            </div>
-            <p>Cooklang is like markdown for recipes. It lets you write recipes
-                in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
-            </p>
-            <hr />
-        </div>
-        <!-- Blog listing component -->
-        <div class="blog-list-component">
-            <h1>Cooklang - Managing Recipes in Git</h1>
-            <div class="viewmore">
-                01/01/2022 <a href="article4.html">View More</a>
-            </div>
-            <p>Cooklang is like markdown for recipes. It lets you write recipes
-                in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
-            </p>
-            <hr />
-        </div>
-        <!-- Blog listing component -->
-        <div class="blog-list-component">
-            <h1>Cooklang - Managing Recipes in Git</h1>
-            <div class="viewmore">
-                01/01/2022 <a href="article5.html">View More</a>
-            </div>
-            <p>Cooklang is like markdown for recipes. It lets you write recipes
-                in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
-            </p>
-            <hr />
-        </div>
+                    <h1>Cooklang - Managing Recipes in Git</h1>
+                    <div class="viewmore">
+                        01/01/2022 <a href="article4.html">View More</a>
+                    </div>
+                    <img src="tree-small.jpeg" />
+                    <p>Cooklang is like markdown for recipes. It lets you write recipes
+                        in a human-readable format that a computer can parse to get the ingredient list, steps,
+                        etc.
+                    </p>
+                    <hr />
 
 
+                </div>
+                <!-- Blog listing component -->
+                <div class="blog-list-component">
+                    <h1>Cooklang - Managing Recipes in Git</h1>
+                    <div class="viewmore">
+                        01/01/2022 <a href="article2.html">View More</a>
+
+                    </div>
+                    <p>Cooklang is like markdown for recipes. It lets you write recipes
+                        in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
+                    </p>
+                    <hr />
+                </div>
+                <!-- Blog listing component -->
+                <div class="blog-list-component">
+                    <h1>Cooklang - Managing Recipes in Git</h1>
+                    <div class="viewmore">
+                        01/01/2022 <a href="article3.html">View More</a>
+                    </div>
+                    <p>Cooklang is like markdown for recipes. It lets you write recipes
+                        in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
+                    </p>
+                    <hr />
+                </div>
+                <!-- Blog listing component -->
+                <div class="blog-list-component">
+                    <div>
+                        <img src="tree-small.jpeg" />
+                        <div>
+                            <h1>Cooklang - Managing Recipes in Git</h1>
+                            <div class="viewmore">
+                                01/01/2022 <a href="article4.html">View More</a>
+                            </div>
+                            <p>Cooklang is like markdown for recipes. It lets you write recipes
+                                in a human-readable format that a computer can parse to get the ingredient list, steps,
+                                etc.
+                            </p>
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog listing component -->
+                <div class="blog-list-component">
+                    <h1>Cooklang - Managing Recipes in Git</h1>
+                    <div class="viewmore">
+                        01/01/2022 <a href="article5.html">View More</a>
+                    </div>
+                    <p>Cooklang is like markdown for recipes. It lets you write recipes
+                        in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
+                    </p>
+                    <hr />
+                </div>
+            </div>
+        </div>
     </section>
 
 
@@ -169,16 +213,15 @@
 
 
     <footer id="footer">
-        <div class="watermark-horizontal">CONTACT</div>
+        <div class="title-horizontal">CONTACT</div>
         <div class="footer-component">
             <img class="footer-image" src="crossing copy.jpg" alt="footer-image" />
             <div class="footer-icons">
                 <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="linkedin-icon.png"
                             atl="linkedin" /></a></div>
                 <div><a href="https://github.com/coderGirlSu"><img src="github-icon.png" atl="github" /></a></div>
-                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="1.png" atl="email" /></a>
-                </div>
-                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="resume-icon.png" atl="resume" /></a>
+                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="resume-icon.png"
+                            atl="resume" /></a>
                 </div>
             </div>
 
