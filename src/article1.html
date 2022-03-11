@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Head-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title> SuZhang Portfolio</title>
+    <script src="scripts/index.js" defer></script>
 </head>
 
+
+<!--Body-->
+
 <body>
-    <nav id="top">
-        <div class="home">
-            <a href="index.html">
-                SU ZHANG
-            </a>
-        </div>
-        <div class="navbaritem"><a href="index.html#about">ABOUT</a></div>
-        <div class="navbaritem"><a href="index.html#project">PROJECT</a></div>
-        <div class="navbaritem"><a href="index.html#blog">BLOG</a></div>
-        <div class="navbaritem"><a href="index.html#contact">CONTACT</a></div>
-    </nav>
+    <header>
+        <nav id="top">
+            <div class="home">
+                <a href="index.html">
+                    SU ZHANG
+                </a>
+            </div>
 
-    <div class="article">
-        <picture>
-            <source media="(min-width:800px)"  srcset="tree-large.jpeg">
-            <img src="tree-small.jpeg" alt="tree" />
-        </picture>
+            <div class="navbaritem"><a href="index.html#about">ABOUT</a></div>
+            <div class="navbaritem"><a href="index.html#project">PROJECT</a></div>
+            <div class="navbaritem"><a href="index.html#blog">BLOG</a></div>
+            <div class="navbaritem"><a href="index.html#contact">CONTACT</a></div>
+        </nav>
+    </header>
 
-        <p>Recipe sites have gotten so bloated that you need to read someone's entire life story to get the ingredients
-            and
-            steps. I'm a big fan of storing information in plain text in git, as well as [[cooking]], so I was happy to
-            discover CookLang.
+    <!--Main Body Container-->
+    <main>
+        <article>
 
-            I don't want to write my recipes in completely unstructured text, because then I can't do interesting things
-            like generate shopping lists, convert units, get required cookware, etc. I also don't want to write them in
-            a
-            highly structured format like JSON because it would be too difficult to read and maintain.
+            <div class="article">
+                <!--Blog Image Container-->
+                <picture>
+                    <source media="(min-width:800px)" srcset="tree-large.jpeg">
+                    <img src="tree-small.jpeg" alt="tree" />
+                </picture>
+                <!--Blog Content-->
+                <p>Recipe sites have gotten so bloated that you need to read someone's entire life story to get the
+                    ingredients
+                    and
+                    steps. I'm a big fan of storing information in plain text in git, as well as [[cooking]], so I was
+                    happy to
+                    discover CookLang.
 
-            I like cooklang because you can read it like a recipe if you want. I also like that you can list the
-            ingredients
-            throughout the steps and it automatically builds an ingredients list. This way you don't have to maintain a
-            dedicated ingredients list and it's easier to update.
+                    I don't want to write my recipes in completely unstructured text, because then I can't do
+                    interesting things
+                    like generate shopping lists, convert units, get required cookware, etc. I also don't want to write
+                    them in
+                    a
+                    highly structured format like JSON because it would be too difficult to read and maintain.
 
-        </p>
+                    I like cooklang because you can read it like a recipe if you want. I also like that you can list the
+                    ingredients
+                    throughout the steps and it automatically builds an ingredients list. This way you don't have to
+                    maintain a
+                    dedicated ingredients list and it's easier to update.
 
-    </div>
+                </p>
 
+            </div>
+        </article>
+    </main>
 
-
-
+    <script src="scripts.js"></script>
 </body>
 
 </html>

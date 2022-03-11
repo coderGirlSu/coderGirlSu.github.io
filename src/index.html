@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Head-->
 
 <head>
     <meta charset="UTF-8">
@@ -9,164 +10,198 @@
     <script src="scripts/index.js" defer></script>
 </head>
 
+<!--Body-->
 
 <body>
-    <nav id="top">
-        <div class="home">
-            <a href="index.html">
-                SU ZHANG
-            </a>
-        </div>
+    <header>
+        <!--R2 Logo Navigation Container -->
+        <nav id="top">
+            <div class="home">
+                <a href="index.html"><img src="home.png" alt="logo" /> </a>
+            </div>
+            <!--R2 Right Navigation Bar Container -->
+            <div><h3>Full Stack Developer</h3></div>
+            <div class="navbaritem"><a href="#about">ABOUT</a></div>
+            <div class="navbaritem"><a href="#project">PROJECT</a></div>
+            <div class="navbaritem"><a href="#blog">BLOG</a></div>
+            <div class="navbaritem"><a href="#footer">CONTACT</a></div>
 
-        <div class="navbaritem"><a href="#about">ABOUT</a></div>
-        <div class="navbaritem"><a href="#project">PROJECT</a></div>
-        <div class="navbaritem"><a href="#blog">BLOG</a></div>
-        <div class="navbaritem"><a href="#footer">CONTACT</a></div>
-
-        <div class="burger-icon">
-            <img src="menu.png" alt="menu" onclick="burgerMenu()">
-        </div>
-
-        <div class="burger-menu" id="burger-menu">
-            <div class="menuitem"><a href="#about">ABOUT</a></div>
-            <div class="menuitem"><a href="#project">PROJECT</a></div>
-            <div class="menuitem"><a href="#blog">BLOG</a></div>
-            <div class="menuitem"><a href="#footer">CONTACT</a></div>
-        </div>
-
-    </nav>
-
-
-    <picture>
-        <source media="(min-width:800px)" srcset="1person-large.jpg">
-        <img class="main-image" src="1person-small.jpg" alt="person-image" />
-    </picture>
-
-
-
-    
-
-    <section id="about">
-        <div class="two-column">
-            <h1 class="title-vertical">ABOUT ME</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
-                Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
-                Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
-                Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
-                Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod pariatur dolor quam, qui debitis quisquam
-                voluptas repellendus dolore ab voluptates. Odio natus quo eum consequuntur vel blanditiis est corrupti
-                perferendis!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quibusdam repudiandae, dolorem corporis
-                quod,
-                velit odio, aut sint tempora ab sunt quos quo consectetur aliquam? Dolores, voluptate doloremque.
-                Doloribus,
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
-                Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod pariatur dolor quam, qui debitis quisquam
-                voluptas repellendus dolore ab voluptates. Odio natus quo eum consequuntur vel blanditiis est corrupti
-                perferendis!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quibusdam repudiandae, dolorem corporis
-                quod,
-                velit odio, aut sint tempora ab sunt quos quo consectetur aliquam? Dolores, voluptate doloremque.
-                Doloribus,
-
-                praesentium!</p>
-
-        </div>
-    </section>
-
-
-
-
-    <section id="project">
-        <div class="title-horizontal">PROJECT</div>
-        <div class="project-container">
-            <div class="project-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia doloribus,
-                temporibus perspiciatis laborum
-                minima impedit tempora magnam quidem consectetur velit, minus ea. Pariatur iste odit impedit quae
-                reiciendis
-                a nulla.
+            <!--R2 Hamburger Menu Navigation Container -->
+            <div class="burger-icon">
+                <img src="menu.png" alt="menu" onclick="burgerMenu()">
             </div>
 
-            <div class="project-image">
-                <picture>
-                    <source media="(min-width:800px)" srcset="tree-large.jpeg">
-                    <img src="tree-small.jpeg" alt="tree" />
-                </picture>
+            <div class="burger-menu" id="burger-menu">
+                <div class="menuitem"><a href="#about">ABOUT</a></div>
+                <div class="menuitem"><a href="#project">PROJECT</a></div>
+                <div class="menuitem"><a href="#blog">BLOG</a></div>
+                <div class="menuitem"><a href="#footer">CONTACT</a></div>
             </div>
-        </div>
 
+        </nav>
 
-    </section>
-
-
-
-
-
-    <section id="blog">
-        <div class="two-column">
-            <h1 class="title-vertical">BLOG</h1>
-
-            <div>
-                <!-- Blog listing component -->
-                <div class="blog-list-component">
+        <!-- R3 Main Background Image/ no repeat / width:100% -->
+        <picture>
+            <source media="(min-width:800px)" srcset="1person-large.jpg">
+            <img class="main-image" src="1person-small.jpg" alt="person-image" />
+        </picture>
+    </header>
 
 
 
-                    <h1>Cooklang - Managing Recipes in Git</h1>
-                    <div class="viewmore">
-                        01/01/2022 <a href="article4.html">View More</a>
-                    </div>
-                    <img src="tree-small.jpeg" />
-                    <p>Cooklang is like markdown for recipes. It lets you write recipes
-                        in a human-readable format that a computer can parse to get the ingredient list, steps,
-                        etc.
-                    </p>
-                    <hr />
+    <!-- Main Body Container-->
+    <main>
+
+        <section id="about">
+            <div class="two-column">
+                <!-- About Section Title-->
+                <h1 class="title-vertical">ABOUT ME</h1>
+                <!--About Me Content-->
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
+                    Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
+                    Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
+                    Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
+                    Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod pariatur dolor quam, qui debitis
+                    quisquam
+                    voluptas repellendus dolore ab voluptates. Odio natus quo eum consequuntur vel blanditiis est
+                    corrupti
+                    perferendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quibusdam repudiandae, dolorem corporis
+                    quod,
+                    velit odio, aut sint tempora ab sunt quos quo consectetur aliquam? Dolores, voluptate doloremque.
+                    Doloribus,
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Veritatis ea ad rem accusamus, qui quo amet mollitia minima dolor numquam?
+                    Rerum architecto eum incidunt sed asperiores? Necessitatibus quo id sequi.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod pariatur dolor quam, qui debitis
+                    quisquam
+                    voluptas repellendus dolore ab voluptates. Odio natus quo eum consequuntur vel blanditiis est
+                    corrupti
+                    perferendis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quibusdam repudiandae, dolorem corporis
+                    quod,
+                    velit odio, aut sint tempora ab sunt quos quo consectetur aliquam? Dolores, voluptate doloremque.
+                    Doloribus,
+
+                    praesentium!</p>
+
+            </div>
+        </section>
 
 
+
+
+        <section id="project">
+            <div class="title-horizontal">PROJECT</div>
+            <div class="project-container">
+                <div class="project-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia doloribus,
+                    temporibus perspiciatis laborum
+                    minima impedit tempora magnam quidem consectetur velit, minus ea. Pariatur iste odit impedit quae
+                    reiciendis
+                    a nulla.
                 </div>
-                <!-- Blog listing component -->
-                <div class="blog-list-component">
-                    <h1>Cooklang - Managing Recipes in Git</h1>
-                    <div class="viewmore">
-                        01/01/2022 <a href="article2.html">View More</a>
 
-                    </div>
-                    <p>Cooklang is like markdown for recipes. It lets you write recipes
-                        in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
-                    </p>
-                    <hr />
+                <div class="project-image">
+                    <picture>
+                        <source media="(min-width:800px)" srcset="tree-large.jpeg">
+                        <img src="tree-small.jpeg" alt="tree" />
+                    </picture>
                 </div>
-                <!-- Blog listing component -->
-                <div class="blog-list-component">
-                    <h1>Cooklang - Managing Recipes in Git</h1>
-                    <div class="viewmore">
-                        01/01/2022 <a href="article3.html">View More</a>
-                    </div>
-                    <p>Cooklang is like markdown for recipes. It lets you write recipes
-                        in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
-                    </p>
-                    <hr />
-                </div>
-                <!-- Blog listing component -->
-                <div class="blog-list-component">
+            </div>
+        </section>
+
+
+
+
+        <article>
+            <section id="blog">
+                <div class="two-column">
+                    <!-- Blog Section Title-->
+                    <h1 class="title-vertical">BLOG</h1>
+
                     <div>
-                        <img src="tree-small.jpeg" />
-                        <div>
+                        <!-- Blog listing component -->
+                        <div class="blog-list-component">
+
+
+
                             <h1>Cooklang - Managing Recipes in Git</h1>
                             <div class="viewmore">
                                 01/01/2022 <a href="article4.html">View More</a>
                             </div>
+                            <img src="tree-small.jpeg" alt="tree" />
+                            <!--Blog Abstract-->
+                            <p>Cooklang is like markdown for recipes. It lets you write recipes
+                                in a human-readable format that a computer can parse to get the ingredient list, steps,
+                                etc.
+                            </p>
+                            <hr />
+
+
+                        </div>
+                        <!-- Blog listing component -->
+                        <div class="blog-list-component">
+                            <h1>Cooklang - Managing Recipes in Git</h1>
+                            <div class="viewmore">
+                                01/01/2022 <a href="article2.html">View More</a>
+                            </div>
+                            <img src="tree-small.jpeg" alt="tree" />
+                            <!--Blog Abstract-->
+                            <p>Cooklang is like markdown for recipes. It lets you write recipes
+                                in a human-readable format that a computer can parse to get the ingredient list, steps,
+                                etc.
+                            </p>
+                            <hr />
+                        </div>
+                        <!-- Blog listing component -->
+                        <div class="blog-list-component">
+                            <h1>Cooklang - Managing Recipes in Git</h1>
+                            <div class="viewmore">
+                                01/01/2022 <a href="article3.html">View More</a>
+                            </div>
+                            <img src="tree-small.jpeg" alt="tree" />
+                            <!--Blog Abstract-->
+                            <p>Cooklang is like markdown for recipes. It lets you write recipes
+                                in a human-readable format that a computer can parse to get the ingredient list, steps,
+                                etc.
+                            </p>
+                            <hr />
+                        </div>
+                        <!-- Blog listing component -->
+                        <div class="blog-list-component">
+                            <div>
+                                <div>
+                                    <h1>Cooklang - Managing Recipes in Git</h1>
+                                    <div class="viewmore">
+                                        01/01/2022 <a href="article4.html">View More</a>
+                                    </div>
+                                    <img src="tree-small.jpeg" alt="tree" />
+                                    <!--Blog Abstract-->
+                                    <p>Cooklang is like markdown for recipes. It lets you write recipes
+                                        in a human-readable format that a computer can parse to get the ingredient list,
+                                        steps,
+                                        etc.
+                                    </p>
+                                    <hr />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog listing component -->
+                        <div class="blog-list-component">
+                            <h1>Cooklang - Managing Recipes in Git</h1>
+                            <div class="viewmore">
+                                01/01/2022 <a href="article5.html">View More</a>
+                            </div>
+                            <img src="tree-small.jpeg" alt="tree" />
+                            <!--Blog Abstract-->
                             <p>Cooklang is like markdown for recipes. It lets you write recipes
                                 in a human-readable format that a computer can parse to get the ingredient list, steps,
                                 etc.
@@ -175,37 +210,12 @@
                         </div>
                     </div>
                 </div>
-                <!-- Blog listing component -->
-                <div class="blog-list-component">
-                    <h1>Cooklang - Managing Recipes in Git</h1>
-                    <div class="viewmore">
-                        01/01/2022 <a href="article5.html">View More</a>
-                    </div>
-                    <p>Cooklang is like markdown for recipes. It lets you write recipes
-                        in a human-readable format that a computer can parse to get the ingredient list, steps, etc.
-                    </p>
-                    <hr />
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        </article>
+
+    </main>
 
 
-
-    <aside>
-
-        <div class="arrownav">
-            <div>
-                <a href="#top"><img src="arrow.png" alt="arrow" />
-                </a>
-            </div>
-
-        </div>
-
-
-
-
-    </aside>
 
 
 
@@ -213,9 +223,12 @@
 
 
     <footer id="footer">
-        <div class="title-horizontal">CONTACT</div>
+        <!-- Contact Section Title-->
+        <h1 class="title-horizontal">CONTACT</h1>
         <div class="footer-component">
+            <!-- Footer image-->
             <img class="footer-image" src="crossing copy.jpg" alt="footer-image" />
+            <!-- A Container Which Links to Professional Websites-->
             <div class="footer-icons">
                 <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="linkedin-icon.png"
                             atl="linkedin" /></a></div>
@@ -226,13 +239,16 @@
             </div>
 
         </div>
+        <!-- Back to Top Navigation icon-->
+        <div class="arrownav">
+            <div>
+                <a href="#top"><img src="arrow.png" alt="arrow" /></a>
+            </div>
+        </div>
 
     </footer>
 
-
-
-
-
+    <!-- Link to Javascript-->
     <script src="scripts.js"></script>
 </body>
 

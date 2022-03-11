@@ -1,3 +1,10 @@
+
+picture .main-image {
+    width: 100%;
+}
+
+
+
 .home{
     font-size: 30px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -107,18 +114,14 @@ section {
     margin-right: -15px;
     margin-bottom: 80px;
 }
-picture .main-image {
-    width: 100%;
-}
+
 section .two-column {
     display: flex;
+    
 }
 
 
-.blog-list-component {
 
- 
-}
 .blog-list-component img {
     max-width: 30%;
 }
