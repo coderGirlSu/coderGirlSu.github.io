@@ -5,15 +5,7 @@ picture .main-image {
 
 
 
-.home{
-    font-size: 30px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-}
-.home :hover{
-    
-    text-decoration: none;
-    
-}
+
 
 body {
     background-color: #ffffff;
@@ -27,15 +19,7 @@ body {
     }
 }
 
-nav {
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    right: 0px;
-
-}
 
 a{
     text-decoration: none;
@@ -55,13 +39,31 @@ a:hover{
     nav .burger-icon img {
         display: none;
     }
-
+   
 }
 
+
+
+
+
+/* Nav component styles */
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    right: 0px;
+}
+nav .nav-title {
+    flex-grow: 1;
+}
+nav h3 {
+    margin-top:13px;
+    margin-left:3px;
+}
 nav .burger-icon img {
     width: 40px;
 }
-
 nav .burger-menu {
     position: absolute;
     display: none;
@@ -70,38 +72,34 @@ nav .burger-menu {
     top: 30px;
     background-color: #dadada3a;
 }
-
-
-
 nav .visible {
     display:block;
 }
-
-
 nav .menuitem {
     padding: 15px;
 }
-
-
-
-
-
 nav a {
     color: #000000;
 
 }
-
-nav>.home {
-    flex-grow: 1;
-}
-
-nav>.home img {
+nav > .home img {
     width: 40px;
 }
-
+nav .home{
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+nav .home :hover{
+    text-decoration: none;
+}
 .navbaritem {
     margin: 5px 5px 5px 5px;
 }
+
+
+
+
+
 
 #home {
     border-radius: 8px;
@@ -117,48 +115,35 @@ section {
 
 section .two-column {
     display: flex;
-    
 }
 
 
-
+.blog-list-component {
+    max-width: 85%;
+    float: right;
+}
 .blog-list-component img {
-    max-width: 30%;
-}
-.blog-list-component hr {
-  
-   
+    max-width: 50%;
 }
 
 
-.project-container {
+
+.project-text-container {
     display: flex;
-    align-items: flex-end;
 }
-
-.project-text {
-
-    text-align: left;
-
+ .project-image-container {
+     overflow: hidden;
 }
-
-
- .project-image:hover{
+.project-image-container img {
+    max-width: 100%;
+}
+.project-image-container img:hover {
     transform-origin: center top;
     transform: scale(1.35);
     will-change: transform;
     transition-property: transform;
     transition-duration: 1.6s;
     transition-timing-function: cubic-bezier(.3,.1,.1,1);
-}
-
-
-
-
-.project-image img {
-    max-width: 100%;
-
-
 }
 
 
@@ -214,8 +199,4 @@ section .two-column {
 .footer-component .footer-icons div:hover{
     transform: scale(1.2);
 }
-
-
-/* Article component styles */
-
 

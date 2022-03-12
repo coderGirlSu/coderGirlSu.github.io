@@ -14,19 +14,19 @@
 
 <body>
     <header>
-        <!--R2 Logo Navigation Container -->
+        <!--R2 Logo Navigation Component -->
         <nav id="top">
             <div class="home">
                 <a href="index.html"><img src="home.png" alt="logo" /> </a>
             </div>
-            <!--R2 Right Navigation Bar Container -->
-            <div><h3>Full Stack Developer</h3></div>
+            <!--R2 Right Navigation Bar Component -->
+            <div class="nav-title"><h3>Full Stack Developer</h3></div>
             <div class="navbaritem"><a href="#about">ABOUT</a></div>
             <div class="navbaritem"><a href="#project">PROJECT</a></div>
             <div class="navbaritem"><a href="#blog">BLOG</a></div>
             <div class="navbaritem"><a href="#footer">CONTACT</a></div>
 
-            <!--R2 Hamburger Menu Navigation Container -->
+            <!--R2 Hamburger Menu Navigation Component -->
             <div class="burger-icon">
                 <img src="menu.png" alt="menu" onclick="burgerMenu()">
             </div>
@@ -98,10 +98,11 @@
 
 
 
-
+        
         <section id="project">
-            <div class="title-horizontal">PROJECT</div>
-            <div class="project-container">
+            <!-- Project Section Title-->  
+            <h1 class="title-horizontal">PROJECT</h1>
+            <div class="project-text-container">
                 <div class="project-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia doloribus,
                     temporibus perspiciatis laborum
                     minima impedit tempora magnam quidem consectetur velit, minus ea. Pariatur iste odit impedit quae
@@ -109,10 +110,10 @@
                     a nulla.
                 </div>
 
-                <div class="project-image">
+                <div class="project-image-container">
                     <picture>
                         <source media="(min-width:800px)" srcset="tree-large.jpeg">
-                        <img src="tree-small.jpeg" alt="tree" />
+                        <img src="tree-small.jpeg" alt="tree" />  
                     </picture>
                 </div>
             </div>
@@ -121,21 +122,20 @@
 
 
 
-        <article>
+       
             <section id="blog">
                 <div class="two-column">
                     <!-- Blog Section Title-->
-                    <h1 class="title-vertical">BLOG</h1>
+                    <div>
+                        <h1 class="title-vertical">BLOG</h1>
+                    </div>
 
                     <div>
                         <!-- Blog listing component -->
                         <div class="blog-list-component">
-
-
-
                             <h1>Cooklang - Managing Recipes in Git</h1>
                             <div class="viewmore">
-                                01/01/2022 <a href="article4.html">View More</a>
+                                01/01/2022 <a href="article1.html">View More</a>
                             </div>
                             <img src="tree-small.jpeg" alt="tree" />
                             <!--Blog Abstract-->
@@ -143,9 +143,7 @@
                                 in a human-readable format that a computer can parse to get the ingredient list, steps,
                                 etc.
                             </p>
-                            <hr />
-
-
+                            <hr /> 
                         </div>
                         <!-- Blog listing component -->
                         <div class="blog-list-component">
@@ -159,7 +157,7 @@
                                 in a human-readable format that a computer can parse to get the ingredient list, steps,
                                 etc.
                             </p>
-                            <hr />
+                            <hr /> 
                         </div>
                         <!-- Blog listing component -->
                         <div class="blog-list-component">
@@ -173,26 +171,21 @@
                                 in a human-readable format that a computer can parse to get the ingredient list, steps,
                                 etc.
                             </p>
-                            <hr />
+                            <hr /> 
                         </div>
                         <!-- Blog listing component -->
                         <div class="blog-list-component">
-                            <div>
-                                <div>
-                                    <h1>Cooklang - Managing Recipes in Git</h1>
-                                    <div class="viewmore">
-                                        01/01/2022 <a href="article4.html">View More</a>
-                                    </div>
-                                    <img src="tree-small.jpeg" alt="tree" />
-                                    <!--Blog Abstract-->
-                                    <p>Cooklang is like markdown for recipes. It lets you write recipes
-                                        in a human-readable format that a computer can parse to get the ingredient list,
-                                        steps,
-                                        etc.
-                                    </p>
-                                    <hr />
-                                </div>
+                            <h1>Cooklang - Managing Recipes in Git</h1>
+                            <div class="viewmore">
+                                01/01/2022 <a href="article4.html">View More</a>
                             </div>
+                            <img src="tree-small.jpeg" alt="tree" />
+                            <!--Blog Abstract-->
+                            <p>Cooklang is like markdown for recipes. It lets you write recipes
+                                in a human-readable format that a computer can parse to get the ingredient list, steps,
+                                etc.
+                            </p>
+                            <hr /> 
                         </div>
                         <!-- Blog listing component -->
                         <div class="blog-list-component">
@@ -206,12 +199,11 @@
                                 in a human-readable format that a computer can parse to get the ingredient list, steps,
                                 etc.
                             </p>
-                            <hr />
+                            <hr /> 
                         </div>
                     </div>
                 </div>
             </section>
-        </article>
 
     </main>
 
@@ -225,9 +217,10 @@
     <footer id="footer">
         <!-- Contact Section Title-->
         <h1 class="title-horizontal">CONTACT</h1>
+        <!-- Footer component -->
         <div class="footer-component">
             <!-- Footer image-->
-            <img class="footer-image" src="crossing copy.jpg" alt="footer-image" />
+            <img class="footer-image" src="crossing3.jpg" alt="footer-image" />
             <!-- A Container Which Links to Professional Websites-->
             <div class="footer-icons">
                 <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="linkedin-icon.png"
@@ -239,7 +232,7 @@
             </div>
 
         </div>
-        <!-- Back to Top Navigation icon-->
+        <!-- Back to Top Navigation Component-->
         <div class="arrownav">
             <div>
                 <a href="#top"><img src="arrow.png" alt="arrow" /></a>
