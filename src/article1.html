@@ -6,39 +6,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title> SuZhang Portfolio</title>
+    <title> Su Zhang</title>
     <script src="scripts/index.js" defer></script>
 </head>
-
 
 <!--Body-->
 
 <body>
     <header>
+        <!--R2 Logo Navigation Component -->
         <nav id="top">
             <div class="home">
-                <a href="index.html">
-                    SU ZHANG
-                </a>
+                <a href="index.html"><img src="SZ.png" alt="logo" /> </a>
+            </div>
+            <!--R2 Right Navigation Bar Component -->
+            <div class="nav-title">
+                <h3>Full Stack Developer</h3>
+            </div>
+            <div class="navbaritem"><a href="index.html#about">ABOUT</a></div>
+            <div class="navbaritem"><a href="#project">PROJECT</a></div>
+            <div class="navbaritem"><a href="#blog">BLOG</a></div>
+            <div class="navbaritem"><a href="#footer">CONTACT</a></div>
+
+            <!--R2 Hamburger Menu Navigation Component -->
+            <div class="burger-icon">
+                <img src="menu.png" alt="menu" onclick="burgerMenu()">
             </div>
 
-            <div class="navbaritem"><a href="index.html#about">ABOUT</a></div>
-            <div class="navbaritem"><a href="index.html#project">PROJECT</a></div>
-            <div class="navbaritem"><a href="index.html#blog">BLOG</a></div>
-            <div class="navbaritem"><a href="index.html#contact">CONTACT</a></div>
+            <div class="burger-menu" id="burger-menu">
+                <div class="menuitem"><a href="index.html#about">ABOUT</a></div>
+                <div class="menuitem"><a href="#project">PROJECT</a></div>
+                <div class="menuitem"><a href="#blog">BLOG</a></div>
+                <div class="menuitem"><a href="#footer">CONTACT</a></div>
+            </div>
+
         </nav>
+
     </header>
+
 
     <!--Main Body Container-->
     <main>
         <article>
 
-            <div class="article">
+            <div class="article-component">
                 <!--Blog Image Container-->
                 <picture>
                     <source media="(min-width:800px)" srcset="tree-large.jpeg">
                     <img src="tree-small.jpeg" alt="tree" />
                 </picture>
+                <!--Blog Title-->
+                <h1>Cooklang - Managing Recipes in Git</h1>
+                <!--Blog Date-->
+                <h2>01/01/2022</h2>
                 <!--Blog Content-->
                 <p>Recipe sites have gotten so bloated that you need to read someone's entire life story to get the
                     ingredients
@@ -59,6 +79,25 @@
                     throughout the steps and it automatically builds an ingredients list. This way you don't have to
                     maintain a
                     dedicated ingredients list and it's easier to update.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquid, nemo iusto, rerum culpa
+                    omnis molestiae, voluptatum velit odit quibusdam doloremque ipsam totam corrupti. Blanditiis
+                    explicabo ipsum natus omnis veniam?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, eius assumenda architecto dolor
+                    autem saepe explicabo pariatur eveniet, ullam voluptatem similique quisquam nulla culpa error neque
+                    nostrum odio minus aperiam?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur aperiam suscipit error
+                    repudiandae distinctio, repellendus placeat dolorem praesentium accusamus tempore voluptas
+                    laboriosam rem atque obcaecati ut asperiores nisi quae?
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo accusantium nisi placeat et fuga
+                    ratione quaerat, tempore beatae enim adipisci, laudantium blanditiis incidunt asperiores ipsa unde
+                    recusandae possimus? Quasi, beatae!
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptates sequi, nihil minus rerum
+                    hic vitae ipsam fuga laborum quam ab consectetur distinctio dolorem, harum doloribus cum ullam error
+                    laboriosam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fugiat explicabo, fuga numquam at
+                    saepe, error tenetur adipisci sit tempora assumenda quis modi nulla perspiciatis inventore quia
+                    commodi excepturi ullam?
+
 
                 </p>
 
@@ -66,6 +105,36 @@
         </article>
     </main>
 
+    <footer id="footer">
+        <!-- Contact Section Title-->
+        <h1 class="title-horizontal">CONTACT</h1>
+        <!-- Footer component -->
+        <div class="footer-component">
+            <!-- Footer image-->
+            <img class="footer-image" src="crossing3.jpg" alt="footer-image" />
+            <!-- A Container Which Links to Professional Websites-->
+            <div class="footer-icons">
+                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="linkedin-icon.png"
+                            atl="linkedin" /></a></div>
+                <div><a href="https://github.com/coderGirlSu"><img src="github-icon.png" atl="github" /></a></div>
+                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="resume-icon.png"
+                            atl="resume" /></a>
+                </div>
+            </div>
+            <!-- Back to Top Navigation-->
+            <div class="arrownav">
+                <div>
+                    <a href="#top"><img src="arrow.png" alt="arrow" /></a>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+    <!-- Link to Javascript-->
     <script src="scripts.js"></script>
 </body>
 
