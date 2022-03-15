@@ -72,11 +72,14 @@ nav .burger-menu {
     display: none;
     flex-direction: column;
     right: 20px;
-    top: 30px;
+    top: 15px;
     background-color: #dadada3a;
+
+
 }
 nav .visible {
     display:block;
+    
 }
 nav .menuitem {
     padding: 15px;
@@ -122,32 +125,44 @@ section .two-column {
 }
 
 
+
+
 .blog-list-component {
     max-width: 85%;
     float: right;
+    
 }
-.blog-list-component img {
-    max-width: 30%;
+ .blog-image-continer {
+    width: 30%;
+    overflow: hidden;
+}
+.blog-image-continer img {
+    width: 100%;
+    transition: transform 2s; 
+}
+.blog-image-continer img:hover{
+    transform: scale(2);
 }
 
+.project-text{
+    margin: 10px;
+    flex-grow: 1;
+}
 
-
-.project-text-container {
+.project-container {
     display: flex;
+    
 }
  .project-image-container {
      overflow: hidden;
+     flex-grow: 1;
 }
 .project-image-container img {
     max-width: 100%;
+    transition: transform 3s; 
 }
 .project-image-container img:hover {
-    transform-origin: center top;
-    transform: scale(1.35);
-    will-change: transform;
-    transition-property: transform;
-    transition-duration: 1.6s;
-    transition-timing-function: cubic-bezier(.3,.1,.1,1);
+    transform: scale(2);
 }
 
 
