@@ -61,19 +61,15 @@ nav .nav-title {
 
 }
 
-/* nav h3 {
-    margin-top: 12px;
-    margin-left: 13px;
-    color: rgb(180, 180, 180);
-    font-size: 20px;
-} */
-
-
 
 /* SZ logo image size */
 nav>.nav-logo img {
     width: 45px;
+    margin-left: 10px;
 }
+/* nav .nav-logo{
+    margin-left: 10px;
+} */
 
 /* navigation bar items margin */
 nav .navbaritem {
@@ -199,7 +195,7 @@ nav .menuitem {
 @keyframes colour-change {
 
     100% {
-        color: rgb(153, 153, 153);
+        color: rgb(192, 192, 192);
     }
 }
 
@@ -316,31 +312,39 @@ section .two-column {
 }
 
 
-
-/* fading animation of horizontal section  */
+/*titles fading animation  */
 .title-vertical .letter{
-    animation: fading ease-in 5s infinite;
+    animation: fading-v ease-in 5s infinite;
     animation-fill-mode: forwards;
 }
 
 
 .title-horizontal .letter {
-    animation: fading ease-in 5s infinite;
+    animation: fading-h ease-in 5s infinite;
     animation-fill-mode: forwards; 
 }
 
 
 
-/* @keyframes fading {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-} */
 
-@keyframes fading {
+
+@keyframes fading-v {
+    0% {
+        color: rgb(192, 192, 192);
+    }
+    90%{
+        color: rgb(192, 192, 192);
+    }
+    95% {
+        color: rgb(255, 255, 255);
+    }
+    100%{
+        color: rgb(192, 192, 192);
+    }
+}
+
+
+@keyframes fading-h {
     0% {
         color: rgb(214, 186, 199);
     }
@@ -354,7 +358,6 @@ section .two-column {
         color: rgb(214, 186, 199)
     }
 }
-
 
 .title-vertical #about-A {
     animation-delay: 1s;  
@@ -459,7 +462,7 @@ section .two-column {
 
 
 
-/* back-to-top navigation button */
+/* back-to-top navigation button styles */
 
 .arrownav img {
     max-width: 140px;
@@ -477,18 +480,18 @@ section .two-column {
 
 @keyframes glow {
     from {
-        filter: drop-shadow(0px 0px 1px rgb(216, 124, 167));
+        filter: drop-shadow(0px 0px 1px rgb(180, 180, 180));
     }
     to {
-        filter: drop-shadow(0px 0px 3px rgb(216, 124, 167));
+        filter: drop-shadow(0px 0px 2px rgb(77, 77, 77));
     }
 }
 @keyframes unglow {
     from {
-        filter: drop-shadow(0px 0px 3px rgb(216, 124, 167));
+        filter: drop-shadow(0px 0px 2px rgb(77, 77, 77));
     }
     to {
-        filter: drop-shadow(0px 0px 1px rgb(216, 124, 167));
+        filter: drop-shadow(0px 0px 1px rgb(180, 180, 180));
     }
 }
 
