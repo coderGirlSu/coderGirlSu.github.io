@@ -1,13 +1,10 @@
 ## Protfolio Website - Su Zhang
 
-**Portfolio: [Portfolio Link](coderGirlSu.github.io/src)**
+**Portfolio: [Portfolio Link](https://coderGirlSu.github.io/src)**
 
 **Github Repo: [Github Repo Link](https://github.com/coderGirlSu/coderGirlSu.github.io)**
 
-
-
 ---
-
 
 ### **Purpose:**
 
@@ -22,14 +19,26 @@ Before studying IT, I was an architect and also did graphic design for one year.
 1.
 2.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
-
-
-- Navigation Bar
-
-
----
-
 
 ### **Sitemap**
 
@@ -37,7 +46,7 @@ Before studying IT, I was an architect and also did graphic design for one year.
 
 ---
 
-### **Screenshots:**
+### **Screenshots-Browser:**
 
 
 #### **Home**
@@ -56,7 +65,7 @@ Before studying IT, I was an architect and also did graphic design for one year.
 ![Contact Screen](./docs/contact.png)
 
 
-## **Screenshots-Ipad:**
+### **Screenshots-Ipad:**
 
 #### **Home**
 ![Home-ipad Screen](./docs/home-ipad.png)
@@ -73,7 +82,7 @@ Before studying IT, I was an architect and also did graphic design for one year.
 #### **Contact**
 ![Contact-ipad Screen](./docs/contact-ipad.png)
 
-## **Screenshots-Iphone:**
+### **Screenshots-Iphone:**
 
 #### **Home**
 ![Home-iphone Screen](./docs/home-iphone.png)
@@ -90,18 +99,14 @@ Before studying IT, I was an architect and also did graphic design for one year.
 #### **Contact**
 ![Contact-iphone Screen](./docs/contact-iphone.png)
 
+---
 
 ### **Target Audience:**
-
 The audience for this portfolio are employers and developers in the technology industry. This website is a great showcase for my technical skills and personal design style so that employers can have a general understanding of my personal image and technical industry.
-
 
 ---
 
-
-
 ### **Technology Stack:**
-
 - HTML
 - CSS
 - Javascript
@@ -109,6 +114,21 @@ The audience for this portfolio are employers and developers in the technology i
 - Balsamiq Wireframes
 - Microsoft PowerPoint
 - Github
+
+---
+
+### **Wireframes:**
+
+#### **Browser**
+![Wireframes-browser Screen](./docs/Wireframes-browser.png)
+
+#### **Mobile**
+![Wireframes-mobile Screen](./docs/Wireframes-mobile.png)
+
+#### **Ipad**
+![Wireframes-ipad Screen](./docs/Wireframes-ipad.png)
+
+
 
 
 
