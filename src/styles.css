@@ -1,32 +1,25 @@
 picture .main-image {
     width: 100%;
 }
-
-
-
 body {
     background-color: #ffffff;
-
-
 }
-
-/* screen under 800px display none*/
+/* screen size under 800px hide navigation bar*/
 @media screen and (max-width: 800px) {
     .navbaritem {
         display: none;
     }
 }
-
+/* screen size over 800px hide hamburger menu */
 @media screen and (min-width:800px) {
-    nav .burger-icon img {
+    nav .burger-icon img{
+        display: none; 
+    }
+    nav #burger-menu {
         display: none;
     }
-
 }
-
-
-
-/* all anchor links default no underline  */
+/* all anchor links desplay no underline  */
 a {
     text-decoration: none;
     color: rgb(192, 145, 166);
@@ -34,21 +27,14 @@ a {
 a:visited {
     color: rgb(192, 145, 166);
 }
-
-
-
 /* hover over navigation bar items show underline */
 nav .navbaritem a:hover {
     text-decoration: underline;
-
 }
-
 /* hover over hamburger menu items show underline */
 nav .menuitem a:hover{
     text-decoration: underline;
 }
-
-
 /* Managing that how much space in the flex container should be assigned to the nav-title  */
 nav .nav-title {
     flex-grow: 1;
@@ -57,29 +43,19 @@ nav .nav-title {
     margin-top: 10px;
     margin-left: 15px;
     color: #ffffff;
-    
-
 }
-
-
-/* SZ logo image size */
+/* SZ logo image styles */
 nav>.nav-logo img {
     width: 45px;
     margin-left: 10px;
 }
-/* nav .nav-logo{
-    margin-left: 10px;
-} */
-
 /* navigation bar items margin */
 nav .navbaritem {
     margin: 6px 6px 6px 6px;
     font-size: 18px;
     font-family: sans-serif;
-    font-weight: 500;
-    
+    font-weight: 500; 
 }
-
 /* hamburger menu component */
 nav .burger-menu {
     position: absolute;
@@ -89,156 +65,113 @@ nav .burger-menu {
     background-color: #dadada3a;
     width: 100px;
     height: 200px;
-
-
 }
-
 /* hamburger menu icon */
 nav .burger-icon img {
     width: 40px;
 }
-
 /* show hamburger menu */
 nav .visible {
     display: block;
-
 }
-
 /* hameburger menu items padding */
 nav .menuitem {
     padding: 15px;
     font-size: 18px;
     font-family: sans-serif;
-    font-weight: 500;
-    
+    font-weight: 500; 
 }
-
-/* nav-title animation */
+/* nav-title colour-change animation */
 .nav-title .letter {
     animation: colour-change ease-in 1s;
     animation-fill-mode: forwards;
-
 }
-
+/* nav-title colour-change animation delay */
 .nav-title #title-F {
     animation-delay: 1s;
 }
-
 .nav-title #title-u {
     animation-delay: 1.1s;
 }
-
 .nav-title #title-l {
     animation-delay: 1.2s;
 }
-
 .nav-title #title-l2 {
     animation-delay: 1.3s;
 }
-
 .nav-title #title-S {
     animation-delay: 1.4s;
 }
-
 .nav-title #title-t {
     animation-delay: 1.5s;
 }
-
 .nav-title #title-a {
     animation-delay: 1.6s;
 }
-
 .nav-title #title-c {
     animation-delay: 1.7s;
 }
-
 .nav-title #title-k {
     animation-delay: 1.8s;
 }
-
 .nav-title #title-D {
     animation-delay: 1.9s;
 }
-
 .nav-title #title-e {
     animation-delay: 2s;
 }
-
 .nav-title #title-v {
     animation-delay: 2.1s;
 }
-
 .nav-title #title-e2 {
     animation-delay: 2.2s;
 }
-
 .nav-title #title-l3 {
     animation-delay: 2.3s;
 }
-
 .nav-title #title-o {
     animation-delay: 2.4s;
 }
-
 .nav-title #title-p {
     animation-delay: 2.5s;
 }
-
 .nav-title #title-e3 {
     animation-delay: 2.6s;
 }
-
 .nav-title #title-r {
     animation-delay: 2.7s;
 }
-
 @keyframes colour-change {
-
     100% {
         color: rgb(192, 192, 192);
     }
 }
 
 
-
-
-
-
-
-
 /* Nav bar component is using flex-box styles */
 nav {
     display: flex;
     flex-wrap: wrap;
-
 }
-
 section {
     padding: 20px;
     margin-left: -8px;
     margin-right: -15px;
     margin-bottom: 80px;
 }
-
 /* About and Blog section are using felx-box styles */
 section .two-column {
     display: flex;
 }
-
-
-
 /* blog component */
 .blog-list-component {
     max-width: 85%;
     float: right;
-
 }
-
 /* blog title hover over show underline */
 .blog-list-component a:hover{
     text-decoration: underline;
 }
-
 /* blog image continer */
 .blog-image-continer {
     width: 30%;
@@ -249,41 +182,29 @@ section .two-column {
     width: 100%;
     transition: transform 2s;
 }
-/* blog image continer hover over scale  */
+/* blog image continer hover over scale */
 .blog-image-continer img:hover {
     transform: scale(2);
 }
-
-
-
+/* project component styles */
 .project-text {
     margin: 10px;
     flex-grow: 1;
 }
-
 .project-container {
     display: flex;
-
 }
-
 .project-image-container {
     overflow: hidden;
     flex-grow: 1;
 }
-
 .project-image-container img {
     max-width: 100%;
     transition: transform 3s;
 }
-
 .project-image-container img:hover {
     transform: scale(2);
 }
-
-
-
-
-
 /* Vertical title container */
 .title-vertical {
     margin: 0;
@@ -293,14 +214,8 @@ section .two-column {
     writing-mode: tb;
     text-orientation: sideways; 
     padding-top: 10px;
-    /* overflow: visible; ???????/*/
-    
 }
-
-
-
 /* Horizontal title container */
-
 .title-horizontal {
     position: relative;
     color: rgb(214, 186, 199);
@@ -308,26 +223,17 @@ section .two-column {
     font-size: 6em;
     text-align: right;
     font-weight: normal;
-
 }
-
-
-/*titles fading animation  */
+/* titles fading animation  */
 .title-vertical .letter{
     animation: fading-v ease-in 5s infinite;
     animation-fill-mode: forwards;
 }
-
-
 .title-horizontal .letter {
     animation: fading-h ease-in 5s infinite;
     animation-fill-mode: forwards; 
 }
-
-
-
-
-
+/* vertical titles fading animation colour gradient */
 @keyframes fading-v {
     0% {
         color: rgb(192, 192, 192);
@@ -342,8 +248,7 @@ section .two-column {
         color: rgb(192, 192, 192);
     }
 }
-
-
+/* horizontal titles fading animation colour gradient */
 @keyframes fading-h {
     0% {
         color: rgb(214, 186, 199);
@@ -358,7 +263,7 @@ section .two-column {
         color: rgb(214, 186, 199)
     }
 }
-
+/* vertical titles fading animation delay */
 .title-vertical #about-A {
     animation-delay: 1s;  
 }
@@ -380,38 +285,28 @@ section .two-column {
 .title-vertical #about-E {
     animation-delay: 1.6s;  
 }
-
-
-
+/* horizontal titles fading animation delay */
 .title-horizontal #project-P {
     animation-delay: 2s;
 }
-
 .title-horizontal #project-R {
     animation-delay: 2.1s;
 }
-
 .title-horizontal #project-O {
     animation-delay: 2.2s;
 }
-
 .title-horizontal #project-J {
     animation-delay: 2.3s;
 }
-
 .title-horizontal #project-E {
     animation-delay: 2.4s;
 }
-
 .title-horizontal #project-C {
     animation-delay: 2.5s;
 }
-
 .title-horizontal #project-T {
     animation-delay: 2.6s;
 }
-
-
 .title-vertical #blog-B {
     animation-delay: 3s;  
 }
@@ -424,46 +319,32 @@ section .two-column {
 .title-vertical #blog-G {
     animation-delay: 3.3s;  
 }
-
 .title-horizontal #contact-C {
     animation-delay: 4s;
 }
-
 .title-horizontal #contact-O {
     animation-delay: 4.1s;
 }
-
 .title-horizontal #contact-N {
     animation-delay: 4.2s;
 }
-
 .title-horizontal #contact-T {
     animation-delay: 4.3s;
 }
-
 .title-horizontal #contact-A {
     animation-delay: 4.4s;
 }
-
 .title-horizontal #contact-C {
     animation-delay: 4.5s;
 }
-
 .title-horizontal #contact-T {
     animation-delay: 4.6s;
 }
-
-
-
 /* viewmore link font size */
 .viewmore {
     font-size: 20px;
 }
-
-
-
 /* back-to-top navigation button styles */
-
 .arrownav img {
     max-width: 140px;
     position: fixed;
@@ -473,11 +354,10 @@ section .two-column {
     opacity: 0.6;
     animation: unglow ease-in 0.2s forwards;
 }
-
+/* back-to-top navigation button glow animation  */
 .arrownav img:hover {
     animation: glow ease-in 0.2s forwards;
 }
-
 @keyframes glow {
     from {
         filter: drop-shadow(0px 0px 1px rgb(180, 180, 180));
@@ -494,11 +374,7 @@ section .two-column {
         filter: drop-shadow(0px 0px 1px rgb(180, 180, 180));
     }
 }
-
-
-
 /* Blog article component styles */
-
 .article-component{
     margin-left:10px;
     margin-right:10px;
@@ -507,45 +383,29 @@ section .two-column {
     width: 100%;
     transition: transform 2s;
 }
-
-
 .article-component div{
     width: 100%;
     overflow: hidden;
-
 }
-
-
-
 .article-component img:hover{
     transform: scale(2);
-
 }
-
-
-
-
-
-
 /* Footer component styles */
 .footer-component .footer-image,
 .footer-component .footer-icons {
     position: absolute;
     width: 100%;
 }
-
 .footer-component .footer-image {
     min-height: 100px;
 }
-
 .footer-component .footer-icons {
     display: flex;
 }
-
 .footer-component .footer-icons div {
     margin: 20px;
 }
-
 .footer-component .footer-icons div:hover {
     transform: scale(1.2);
 }
+
