@@ -214,6 +214,7 @@ section .two-column {
     writing-mode: tb;
     text-orientation: sideways; 
     padding-top: 10px;
+    width: 25%;
 }
 /* Horizontal title container */
 .title-horizontal {
