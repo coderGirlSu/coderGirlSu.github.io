@@ -30,7 +30,7 @@ article {
 .title-vertical {
     margin: 0;
     color: rgb(192, 192, 192); 
-    font-size: 5em;
+    font-size: 4.7em;
     font-weight: normal;
     writing-mode: tb;
     text-orientation: sideways; 
@@ -43,7 +43,7 @@ article {
     position: relative;
     color: rgb(214, 186, 199);
     right: 10px;
-    font-size: 5em;
+    font-size: 4.7em;
     text-align: right;
     font-weight: normal;
     display: flex;
