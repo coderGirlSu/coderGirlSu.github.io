@@ -213,6 +213,7 @@ nav > .visible {
 .text-with-image .text-with-image-image {
     overflow: hidden;
     margin-top: 10px;
+    height: fit-content;
 }
 .text-with-image .text-with-image-image img {
     max-width: 100%;
