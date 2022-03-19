@@ -1,0 +1,235 @@
+/* ***** Navigation component animation style ***** */
+
+/* Navigation component title animation */
+.nav-title span {
+    animation: colour-change ease-in 1s;
+    animation-fill-mode: forwards;
+}
+/* Navigation component animation delay */
+.nav-title #title-F {
+    animation-delay: 1s;
+}
+.nav-title #title-u {
+    animation-delay: 1.1s;
+}
+.nav-title #title-l {
+    animation-delay: 1.2s;
+}
+.nav-title #title-l2 {
+    animation-delay: 1.3s;
+}
+.nav-title #title-S {
+    animation-delay: 1.4s;
+}
+.nav-title #title-t {
+    animation-delay: 1.5s;
+}
+.nav-title #title-a {
+    animation-delay: 1.6s;
+}
+.nav-title #title-c {
+    animation-delay: 1.7s;
+}
+.nav-title #title-k {
+    animation-delay: 1.8s;
+}
+.nav-title #title-D {
+    animation-delay: 1.9s;
+}
+.nav-title #title-e {
+    animation-delay: 2s;
+}
+.nav-title #title-v {
+    animation-delay: 2.1s;
+}
+.nav-title #title-e2 {
+    animation-delay: 2.2s;
+}
+.nav-title #title-l3 {
+    animation-delay: 2.3s;
+}
+.nav-title #title-o {
+    animation-delay: 2.4s;
+}
+.nav-title #title-p {
+    animation-delay: 2.5s;
+}
+.nav-title #title-e3 {
+    animation-delay: 2.6s;
+}
+.nav-title #title-r {
+    animation-delay: 2.7s;
+}
+@keyframes colour-change {
+    100% {
+        color: rgb(192, 192, 192);
+    }
+}
+
+/* ***** End of navigation component animation styles ***** */
+
+
+
+
+
+
+/*  ***** Vertical title animation ***** */
+
+/* titles fading animation  */
+.title-vertical span {
+    animation: fading-v ease-in 5s infinite;
+    animation-fill-mode: forwards;
+}/* vertical titles fading animation colour gradient */
+@keyframes fading-v {
+    0% {
+        color: rgb(192, 192, 192);
+    }
+    90%{
+        color: rgb(192, 192, 192);
+    }
+    95% {
+        color: rgb(255, 255, 255);
+    }
+    100%{
+        color: rgb(192, 192, 192);
+    }
+}
+/* vertical titles fading animation delay */
+.title-vertical #about-A {
+    animation-delay: 1s;  
+}
+.title-vertical #about-B {
+    animation-delay: 1.1s;  
+}
+.title-vertical #about-O {
+    animation-delay: 1.2s;  
+}
+.title-vertical #about-U {
+    animation-delay: 1.3s;  
+}
+.title-vertical #about-T {
+    animation-delay: 1.4s;  
+}
+.title-vertical #about-M {
+    animation-delay: 1.5s;  
+}
+.title-vertical #about-E {
+    animation-delay: 1.6s;  
+}
+
+/* ***** End of vertical title animations ***** */
+
+
+
+
+
+
+
+/* ***** Horizontal title animations ***** */
+
+.title-horizontal span {
+    animation: fading-h ease-in 5s infinite;
+    animation-fill-mode: forwards; 
+}
+/* horizontal titles fading animation colour gradient */
+@keyframes fading-h {
+    0% {
+        color: rgb(214, 186, 199);
+    }
+    90%{
+        color: rgb(214, 186, 199);
+    }
+    95% {
+        color: rgb(240, 228, 233);
+    }
+    100%{
+        color: rgb(214, 186, 199)
+    }
+}
+
+/* horizontal titles fading animation delay */
+.title-horizontal #project-P {
+    animation-delay: 2s;
+}
+.title-horizontal #project-R {
+    animation-delay: 2.1s;
+}
+.title-horizontal #project-O {
+    animation-delay: 2.2s;
+}
+.title-horizontal #project-J {
+    animation-delay: 2.3s;
+}
+.title-horizontal #project-E {
+    animation-delay: 2.4s;
+}
+.title-horizontal #project-C {
+    animation-delay: 2.5s;
+}
+.title-horizontal #project-T {
+    animation-delay: 2.6s;
+}
+.title-vertical #blog-B {
+    animation-delay: 3s;  
+}
+.title-vertical #blog-L {
+    animation-delay: 3.1s;  
+}
+.title-vertical #blog-O {
+    animation-delay: 3.2s;  
+}
+.title-vertical #blog-G {
+    animation-delay: 3.3s;  
+}
+.title-horizontal #contact-C {
+    animation-delay: 4s;
+}
+.title-horizontal #contact-O {
+    animation-delay: 4.1s;
+}
+.title-horizontal #contact-N {
+    animation-delay: 4.2s;
+}
+.title-horizontal #contact-T {
+    animation-delay: 4.3s;
+}
+.title-horizontal #contact-A {
+    animation-delay: 4.4s;
+}
+.title-horizontal #contact-C {
+    animation-delay: 4.5s;
+}
+.title-horizontal #contact-T {
+    animation-delay: 4.6s;
+}
+
+/* ***** End of horizontal title animations  ***** */
+
+
+
+
+
+/* ***** Back to top component animations ***** */
+
+/* back-to-top navigation button glow animation  */
+.back-to-top img:hover {
+    animation: glow ease-in 0.2s forwards;
+}
+@keyframes glow {
+    from {
+        filter: drop-shadow(0px 0px 1px rgb(180, 180, 180));
+    }
+    to {
+        filter: drop-shadow(0px 0px 2px rgb(77, 77, 77));
+    }
+}
+@keyframes unglow {
+    from {
+        filter: drop-shadow(0px 0px 2px rgb(77, 77, 77));
+    }
+    to {
+        filter: drop-shadow(0px 0px 1px rgb(180, 180, 180));
+    }
+}
+
+/* ***** End of back to top component animations ***** */

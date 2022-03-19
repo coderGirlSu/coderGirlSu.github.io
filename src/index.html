@@ -1,172 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--Head-->
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- Viewport settings for smaller devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Layout and animation stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animation.css">
+
     <title> Su Zhang</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
-<!--Body-->
 
 <body>
     <header>
-        <!--Logo navigation component -->
-        <nav id="top">
+
+        <!-- ***** Navigation component ***** -->
+        <nav id="navigation-menu">
+
+            <!-- Navigation bar logo -->
             <div class="nav-logo">
-                <a href="index.html"><img src="SZ.svg" alt="logo" /> </a>
+                <a href="index.html"><img src="images/SZ.svg" alt="logo" /> </a>
             </div>
-            <!-- Navigation title component -->
+
+            <!-- Navigation bar title -->
             <div class="nav-title">
-                <!-- <h3>Full Stack Developer</h3> -->
-                <span class="letter" id="title-F"> F</span>
-                <span class="letter" id="title-u"> u</span>
-                <span class="letter" id="title-l"> l</span>
-                <span class="letter" id="title-l2"> l</span>
-                <span class="letter">&nbsp;</span>
-                <span class="letter" id="title-S"> S</span>
-                <span class="letter" id="title-t"> t</span>
-                <span class="letter" id="title-a"> a</span>
-                <span class="letter" id="title-c"> c</span>
-                <span class="letter" id="title-k"> k</span>
-                <span class="letter">&nbsp;</span>
-                <span class="letter" id="title-D"> D</span>
-                <span class="letter" id="title-e"> e</span>
-                <span class="letter" id="title-v"> v</span>
-                <span class="letter" id="title-e2"> e</span>
-                <span class="letter" id="title-l3"> l</span>
-                <span class="letter" id="title-o"> o</span>
-                <span class="letter" id="title-p"> p</span>
-                <span class="letter" id="title-e3"> e</span>
-                <span class="letter" id="title-r"> r</span>
+                <span id="title-F">F</span>
+                <span id="title-u">u</span>
+                <span id="title-l">l</span>
+                <span id="title-l2">l</span>
+                <span>&nbsp;</span>
+                <span id="title-S">S</span>
+                <span id="title-t">t</span>
+                <span id="title-a">a</span>
+                <span id="title-c">c</span>
+                <span id="title-k">k</span>
+                <span>&nbsp;</span>
+                <span id="title-D">D</span>
+                <span id="title-e">e</span>
+                <span id="title-v">v</span>
+                <span id="title-e2">e</span>
+                <span id="title-l3">l</span>
+                <span id="title-o">o</span>
+                <span id="title-p">p</span>
+                <span id="title-e3">e</span>
+                <span id="title-r">r</span>
             </div>
+
+            <!-- Navigation bar menu sub-component -->
             <div class="navbaritem"><a href="#about">ABOUT</a></div>
             <div class="navbaritem"><a href="#project">PROJECT</a></div>
             <div class="navbaritem"><a href="#blog">BLOG</a></div>
             <div class="navbaritem"><a href="#footer">CONTACT</a></div>
-            <!--Hamburger menu component -->
+
+            <!--Navigation bar hamburger menu sub-component -->
             <div class="burger-icon">
-                <img src="menu.png" alt="menu" onclick="burgerMenu()">
+                <img src="images/menu.png" alt="menu" onclick="burgerMenu()">
             </div>
             <div class="burger-menu" id="burger-menu">
-                <div class="menuitem"><a href="#about">ABOUT</a></div>
-                <div class="menuitem"><a href="#project">PROJECT</a></div>
-                <div class="menuitem"><a href="#blog">BLOG</a></div>
-                <div class="menuitem"><a href="#footer">CONTACT</a></div>
+                <div class="burger-menu-item"><a href="#about">ABOUT</a></div>
+                <div class="burger-menu-item"><a href="#project">PROJECT</a></div>
+                <div class="burger-menu-item"><a href="#blog">BLOG</a></div>
+                <div class="burger-menu-item"><a href="#footer">CONTACT</a></div>
             </div>
         </nav>
-        <!-- Main Background Image/ no repeat / width:100% -->
-        <picture>
-            <source media="(min-width:800px)" srcset="1person-large.jpg">
-            <img class="main-image" src="1person-small.jpg" alt="person-image" />
-        </picture>
-    </header>
-    <!-- Main Body Container-->
-    <main>
-        <section id="about">
-            <div class="two-column">
-                <!-- About Section Title-->
-                
-                    <h1 class="title-vertical">
-                        <span class="letter" id="about-A">A</span>
-                        <span class="letter" id="about-B">B</span>
-                        <span class="letter" id="about-O">O</span>
-                        <span class="letter" id="about-U">U</span>
-                        <span class="letter" id="about-T">T</span>
-                        <span class="letter">&nbsp;</span>
-                        <span class="letter" id="about-M">M</span>
-                        <span class="letter" id="about-E">E</span>
-                    </h1>
-                
-                <!--About Me Content-->
-                <div>
-                    <p>Hi, I’m Su. I am currently enrolled in a standard Full Stack Developer Course at Coder Academy
-                        and currently in my first semester.
-                        Prior to Coder Academy, I had 7 yeas working experience as an Architect in China and two years
-                        of experience working as a Graphic Designer in Sydney.
-                        I always like to learn something new, so when I moved to Australia, I think it was a good
-                        opportunity to change my career. But starting over in a new country wasn't as easy as I thought,
-                        so I started learning English and studied graphic design on my own because I have 8-year
-                        painting skills and some experience with related Adobe software. That made me to decide open a
-                        small graphic design studio to start with. But as I learned more about this industry, I felt
-                        that this was not the industry I wanted to work for the rest of my life which I can enjoyed.
-                        By chance in 2021, I have a deeper understanding of the IT industry, from playing the
-                        programming game playground, to finding some free courses online to learn, making websites, I
-                        began to enjoy the sense of accomplishment that this programming brings me. From one hour of
-                        programming a day to eight hours a day, it always feels like time flies by when I'm programming.
-                        In 2022, I decided to join the Coder Academy with joy and urgency to start my IT career.
-                    </p>
-                    <div class="about content-container">
-                        <h3>Languages</h3>
-                        • HTML<br>
-                        • CSS<br>
-                        • JavaScript<br>
-                        <h3>Skills</h3>
-                        •
-                        <h3>Employment history</h3>
-                        • 2018-2021 Self-employed as a graphic designer<br>
 
-                        • 2011-2018 Harbin University of Technology`s Institute of Architectural Design
+    </header>
+
+    <!-- Main Body -->
+    <main>
+
+        <!-- Main image -->
+        <picture>
+            <source media="(min-width:800px)" srcset="images/1person-large.jpg">
+            <img class="main-image" src="images/1person-small.jpg" alt="person-image" />
+        </picture>
+
+
+
+        <!-- About me section -->
+        <section id="about">
+            <!-- Two-column component -->
+            <div class="two-column">
+                <!-- Left column shows a vertical title -->
+                <h1 class="title-vertical">
+                    <span id="about-A">A</span>
+                    <span id="about-B">B</span>
+                    <span id="about-O">O</span>
+                    <span id="about-U">U</span>
+                    <span id="about-T">T</span>
+                    <span>&nbsp;</span>
+                    <span id="about-M">M</span>
+                    <span id="about-E">E</span>
+                </h1>
+
+                <!--Right column shows About me content-->
+                <div class="two-column-content">
+                    <div id="about-me">
+                        <h3>Introduction</h3>
+                        <p>
+                            Hi, I'm Su. I am currently enrolled in a standard Full Stack Developer Course at Coder
+                            Academy
+                            and currently in my first semester.
+                        </p>
+                        <p>
+                            Prior to Coder Academy, I had 7 yeas working experience as an Architect in China and two
+                            years
+                            of experience working as a Graphic Designer in Sydney.
+                        </p>
+                        <p>
+                            I always like to learn something new, so when I moved to Australia, I think it was a good
+                            opportunity to change my career. But starting over in a new country wasn't as easy as I
+                            thought,
+                            so I started learning English and studied graphic design on my own because I have 8-year
+                            painting skills and some experience with related Adobe software. That made me to decide open
+                            a
+                            small graphic design studio to start with. But as I learned more about this industry, I felt
+                            that this was not the industry I wanted to work for the rest of my life which I can enjoyed.
+                        </p>
+                        <p>
+                            By chance in 2021, I have a deeper understanding of the IT industry, from playing the
+                            programming game playground, to finding some free courses online to learn, making websites,
+                            I
+                            began to enjoy the sense of accomplishment that this programming brings me. From one hour of
+                            programming a day to eight hours a day, it always feels like time flies by when I'm
+                            programming.
+                            In 2022, I decided to join the Coder Academy with joy and urgency to start my IT career.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Languages</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                        <h3>Skills</h3>
+                        <ul></ul>
+
+                        <h3>Employment history</h3>
+                        <ul>
+                            <li>2018-2021 Self-employed as a graphic designer</li>
+                            <li>2011-2018 Harbin University of Technology`s Institute of Architectural Design</li>
+                        </ul>
+
                         <h3>Education</h3>
-                        • 2022 Coder Academy<br>
-                        • 2010 - 2013 Harbin Institute of Technology China Bachelor of Science, Architecture.
+                        <ul>
+                            <li>2022 Coder Academy</li>
+                            <li>2010 - 2013 Harbin Institute of Technology China Bachelor of Science, Architecture</li>
+                        </ul>
+
                         <h3>Interests</h3>
-                        Piano, Painting, swimming, snowboarding
+                        <ul>
+                            <li>Piano</li>
+                            <li>Drawing</li>
+                            <li>Swimming</li>
+                            <li>Snowboarding</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- End of About me section -->
+
+
+
+
+
+        <!-- Project section -->
         <section id="project">
             <!-- Project Section Title-->
             <h1 class="title-horizontal">
-                <span class="letter" id="project-P">P</span>
-                <span class="letter" id="project-R">R</span>
-                <span class="letter" id="project-O">O</span>
-                <span class="letter" id="project-J">J</span>
-                <span class="letter" id="project-E">E</span>
-                <span class="letter" id="project-C">C</span>
-                <span class="letter" id="project-T">T</span>
+                <span id="project-P">P</span>
+                <span id="project-R">R</span>
+                <span id="project-O">O</span>
+                <span id="project-J">J</span>
+                <span id="project-E">E</span>
+                <span id="project-C">C</span>
+                <span id="project-T">T</span>
             </h1>
-            <div class="project-container">
-                <div class="project-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia doloribus,
-                    temporibus perspiciatis laborum
-                    minima impedit tempora magnam quidem consectetur velit, minus ea. Pariatur iste odit impedit quae
-                    reiciendis
-                    a nulla.
+            <!-- Text with image component -->
+            <div class="text-with-image">
+                <!-- Text part -->
+                <div class="text-with-image-text">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                        doloribus,
+                        temporibus perspiciatis laborum
+                        minima impedit tempora magnam quidem consectetur velit, minus ea. Pariatur iste odit impedit
+                        quae
+                        reiciendis
+                        a nulla.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                        doloribus,
+                        temporibus perspiciatis laborum
+                        minima impedit tempora magnam quidem consectetur velit, minus ea. Pariatur iste odit impedit
+                        quae
+                        reiciendis
+                        a nulla.
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia
+                        doloribus,
+                        temporibus perspiciatis laborum
+                        minima impedit tempora magnam quidem consectetur velit, minus ea. Pariatur iste odit impedit
+                        quae
+                        reiciendis
+                        a nulla.
+                    </p>
                 </div>
-
-                <div class="project-image-container">
+                <!-- Image part -->
+                <div class="text-with-image-image">
                     <picture>
-                        <source media="(min-width:800px)" srcset="tree-large.jpeg">
-                        <img src="tree-small.jpeg" alt="tree" />
+                        <source media="(min-width:800px)" srcset="images/tree-large.jpeg">
+                        <img src="images/tree-small.jpeg" alt="tree" />
                     </picture>
                 </div>
             </div>
         </section>
+        <!-- End of project section -->
+
+
+
+        <!-- Blog section -->
         <section id="blog">
+            <!-- Two column component -->
             <div class="two-column">
+                <!-- Left column shows a vertical title -->
                 <h1 class="title-vertical">
-                    <span class="letter" id="blog-B">B</span>
-                    <span class="letter" id="blog-L">L</span>
-                    <span class="letter" id="blog-O">O</span>
-                    <span class="letter" id="blog-G">G</span>
+                    <span id="blog-B">B</span>
+                    <span id="blog-L">L</span>
+                    <span id="blog-O">O</span>
+                    <span id="blog-G">G</span>
                 </h1>
-                <div>
+
+                <!-- Right column shows Blog content -->
+                <div class="two-column-content">
                     <!-- Blog listing component -->
                     <div class="blog-list-component">
                         <a href="article1.html">
                             <h1>Cooklang - Managing Recipes in Git</h1>
                         </a>
-                        <div class="viewmore">
+                        <div class="details">
                             01/01/2022 <a href="article1.html">View More</a>
                         </div>
                         <div class="blog-image-continer">
-                            <img src="tree-small.jpeg" alt="tree" />
+                            <img src="images/tree-small.jpeg" alt="tree" />
                         </div>
                         <!--Blog Abstract-->
                         <p>Cooklang is like markdown for recipes. It lets you write recipes
@@ -175,16 +262,17 @@
                         </p>
                         <hr />
                     </div>
+
                     <!-- Blog listing component -->
                     <div class="blog-list-component">
-                        <a href="article1.html">
+                        <a href="article2.html">
                             <h1>Cooklang - Managing Recipes in Git</h1>
                         </a>
-                        <div class="viewmore">
+                        <div class="details">
                             01/01/2022 <a href="article2.html">View More</a>
                         </div>
                         <div class="blog-image-continer">
-                            <img src="tree-small.jpeg" alt="tree" />
+                            <img src="images/tree-small.jpeg" alt="tree" />
                         </div>
                         <!--Blog Abstract-->
                         <p>Cooklang is like markdown for recipes. It lets you write recipes
@@ -193,16 +281,17 @@
                         </p>
                         <hr />
                     </div>
+
                     <!-- Blog listing component -->
                     <div class="blog-list-component">
-                        <a href="article1.html">
+                        <a href="article3.html">
                             <h1>Cooklang - Managing Recipes in Git</h1>
                         </a>
-                        <div class="viewmore">
+                        <div class="details">
                             01/01/2022 <a href="article3.html">View More</a>
                         </div>
                         <div class="blog-image-continer">
-                            <img src="tree-small.jpeg" alt="tree" />
+                            <img src="images/tree-small.jpeg" alt="tree" />
                         </div>
                         <!--Blog Abstract-->
                         <p>Cooklang is like markdown for recipes. It lets you write recipes
@@ -211,16 +300,17 @@
                         </p>
                         <hr />
                     </div>
+
                     <!-- Blog listing component -->
                     <div class="blog-list-component">
-                        <a href="article1.html">
+                        <a href="article4.html">
                             <h1>Cooklang - Managing Recipes in Git</h1>
                         </a>
-                        <div class="viewmore">
+                        <div class="details">
                             01/01/2022 <a href="article4.html">View More</a>
                         </div>
                         <div class="blog-image-continer">
-                            <img src="tree-small.jpeg" alt="tree" />
+                            <img src="images/tree-small.jpeg" alt="tree" />
                         </div>
                         <!--Blog Abstract-->
                         <p>Cooklang is like markdown for recipes. It lets you write recipes
@@ -229,16 +319,17 @@
                         </p>
                         <hr />
                     </div>
+
                     <!-- Blog listing component -->
                     <div class="blog-list-component">
-                        <a href="article1.html">
+                        <a href="article5.html">
                             <h1>Cooklang - Managing Recipes in Git</h1>
                         </a>
-                        <div class="viewmore">
+                        <div class="details">
                             01/01/2022 <a href="article5.html">View More</a>
                         </div>
                         <div class="blog-image-continer">
-                            <img src="tree-small.jpeg" alt="tree" />
+                            <img src="images/tree-small.jpeg" alt="tree" />
                         </div>
                         <!--Blog Abstract-->
                         <p>Cooklang is like markdown for recipes. It lets you write recipes
@@ -247,48 +338,55 @@
                         </p>
                         <hr />
                     </div>
+
                 </div>
             </div>
         </section>
+        <!-- End of blog section -->
+
     </main>
+
+
+
     <footer id="footer">
         <!-- Contact Section Title-->
         <h1 class="title-horizontal">
-            <span class="letter" id="contact-C">C</span>
-            <span class="letter" id="contact-O">O</span>
-            <span class="letter" id="contact-N">N</span>
-            <span class="letter" id="contact-T">T</span>
-            <span class="letter" id="contact-A">A</span>
-            <span class="letter" id="contact-C">C</span>
-            <span class="letter" id="contact-T">T</span>
+            <span id="contact-C">C</span>
+            <span id="contact-O">O</span>
+            <span id="contact-N">N</span>
+            <span id="contact-T">T</span>
+            <span id="contact-A">A</span>
+            <span id="contact-C">C</span>
+            <span id="contact-T">T</span>
         </h1>
+
         <!-- Footer component -->
         <div class="footer-component">
             <!-- Footer image-->
-            <img class="footer-image" src="crossing3.jpg" alt="footer-image" />
+            <img src="images/crossing3.jpg" alt="footer-image" />
             <!-- A Container Which Links to Professional Websites-->
             <div class="footer-icons">
-                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="linkedin-icon.png"
+                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="images/linkedin-icon.png"
                             atl="linkedin" /></a></div>
-                <div><a href="https://github.com/coderGirlSu"><img src="github-icon.png" atl="github" /></a></div>
-                <div><a href="SU ZHANG Resume.pdf"><img src="resume-icon.png" atl="resume" /></a>
+                <div><a href="https://github.com/coderGirlSu"><img src="images/github-icon.png" atl="github" /></a>
+                </div>
+                <div><a href="resume.pdf"><img src="images/resume-icon.png" atl="resume" /></a>
                 </div>
             </div>
-            <!-- Back to Top Navigation-->
-            <div class="arrownav">
+
+            <!-- Back to Top Navigation component -->
+            <div class="back-to-top">
                 <div>
-                    <a href="#top"><img src="arrow.svg" alt="arrow" /></a>
+                    <a href="#navigation-menu"><img src="images/arrow.svg" alt="arrow" /></a>
                 </div>
             </div>
 
         </div>
 
-
-
     </footer>
 
     <!-- Link to Javascript-->
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

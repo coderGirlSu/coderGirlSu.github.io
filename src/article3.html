@@ -4,65 +4,75 @@
 
 <head>
     <meta charset="UTF-8">
+
+    <!-- Viewport settings for smaller devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Layout and animation stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animation.css">
+
     <title> Su Zhang</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
 </head>
 
 <!--Body-->
-
 <body>
     <header>
-        <!--Logo navigation component -->
-        <nav id="top">
+
+        <!-- ***** Navigation component ***** -->
+        <nav id="navigation-menu">
+
+            <!-- Navigation bar logo -->
             <div class="nav-logo">
-                <a href="index.html"><img src="SZ.svg" alt="logo" /> </a>
+                <a href="index.html"><img src="images/SZ.svg" alt="logo" /> </a>
             </div>
-            <!-- Navigation title component -->
+
+            <!-- Navigation bar title -->
             <div class="nav-title">
-                <!-- <h3>Full Stack Developer</h3> -->
-                <span class="letter" id="title-F"> F</span>
-                <span class="letter" id="title-u"> u</span>
-                <span class="letter" id="title-l"> l</span>
-                <span class="letter" id="title-l2"> l</span>
-                <span class="letter">&nbsp;</span>
-                <span class="letter" id="title-S"> S</span>
-                <span class="letter" id="title-t"> t</span>
-                <span class="letter" id="title-a"> a</span>
-                <span class="letter" id="title-c"> c</span>
-                <span class="letter" id="title-k"> k</span>
-                <span class="letter">&nbsp;</span>
-                <span class="letter" id="title-D"> D</span>
-                <span class="letter" id="title-e"> e</span>
-                <span class="letter" id="title-v"> v</span>
-                <span class="letter" id="title-e2"> e</span>
-                <span class="letter" id="title-l3"> l</span>
-                <span class="letter" id="title-o"> o</span>
-                <span class="letter" id="title-p"> p</span>
-                <span class="letter" id="title-e3"> e</span>
-                <span class="letter" id="title-r"> r</span>
-
+                <span id="title-F">F</span>
+                <span id="title-u">u</span>
+                <span id="title-l">l</span>
+                <span id="title-l2">l</span>
+                <span>&nbsp;</span>
+                <span id="title-S">S</span>
+                <span id="title-t">t</span>
+                <span id="title-a">a</span>
+                <span id="title-c">c</span>
+                <span id="title-k">k</span>
+                <span>&nbsp;</span>
+                <span id="title-D">D</span>
+                <span id="title-e">e</span>
+                <span id="title-v">v</span>
+                <span id="title-e2">e</span>
+                <span id="title-l3">l</span>
+                <span id="title-o">o</span>
+                <span id="title-p">p</span>
+                <span id="title-e3">e</span>
+                <span id="title-r">r</span>
             </div>
 
-
+            <!-- Navigation bar menu sub-component -->
             <div class="navbaritem"><a href="index.html#about">ABOUT</a></div>
             <div class="navbaritem"><a href="index.html#project">PROJECT</a></div>
             <div class="navbaritem"><a href="index.html#blog">BLOG</a></div>
             <div class="navbaritem"><a href="#footer">CONTACT</a></div>
 
-
-            <!--Hamburger menu component -->
+            <!--Navigation bar hamburger menu sub-component -->
             <div class="burger-icon">
-                <img src="menu.png" alt="menu" onclick="burgerMenu()">
+                <img src="images/menu.png" alt="menu" onclick="burgerMenu()">
             </div>
-
             <div class="burger-menu" id="burger-menu">
-                <div class="menuitem"><a href="index.html#about">ABOUT</a></div>
-                <div class="menuitem"><a href="index.html#project">PROJECT</a></div>
-                <div class="menuitem"><a href="index.html#blog">BLOG</a></div>
-                <div class="menuitem"><a href="#footer">CONTACT</a></div>
+                <div class="burger-menu-item"><a href="index.html#about">ABOUT</a></div>
+                <div class="burger-menu-item"><a href="index.html#project">PROJECT</a></div>
+                <div class="burger-menu-item"><a href="index.html#blog">BLOG</a></div>
+                <div class="burger-menu-item"><a href="#footer">CONTACT</a></div>
             </div>
-
         </nav>
 
     </header>
@@ -71,13 +81,13 @@
     <!--Main Body Container-->
     <main>
         <article>
-
+            <!-- Blog article component -->
             <div class="article-component">
-                <!--Blog Image Container-->
+                <!--Blog Image -->
                 <div>
                     <picture>
-                        <source media="(min-width:800px)" srcset="tree-large.jpeg">
-                        <img src="tree-small.jpeg" alt="tree" />
+                        <source media="(min-width:800px)" srcset="images/tree-large.jpeg">
+                        <img src="images/tree-small.jpeg" alt="tree" />
                     </picture>
                 </div>
                 <!--Blog Title-->
@@ -85,47 +95,21 @@
                 <!--Blog Date-->
                 <h2>01/01/2022</h2>
                 <!--Blog Content-->
-                <p>Recipe sites have gotten so bloated that you need to read someone's entire life story to get the
-                    ingredients
-                    and
-                    steps. I'm a big fan of storing information in plain text in git, as well as [[cooking]], so I was
-                    happy to
-                    discover CookLang.
-
-                    I don't want to write my recipes in completely unstructured text, because then I can't do
-                    interesting things
-                    like generate shopping lists, convert units, get required cookware, etc. I also don't want to write
-                    them in
-                    a
-                    highly structured format like JSON because it would be too difficult to read and maintain.
-
-                    I like cooklang because you can read it like a recipe if you want. I also like that you can list the
-                    ingredients
-                    throughout the steps and it automatically builds an ingredients list. This way you don't have to
-                    maintain a
-                    dedicated ingredients list and it's easier to update.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquid, nemo iusto, rerum culpa
-                    omnis molestiae, voluptatum velit odit quibusdam doloremque ipsam totam corrupti. Blanditiis
-                    explicabo ipsum natus omnis veniam?
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti, eius assumenda architecto dolor
-                    autem saepe explicabo pariatur eveniet, ullam voluptatem similique quisquam nulla culpa error neque
-                    nostrum odio minus aperiam?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur aperiam suscipit error
-                    repudiandae distinctio, repellendus placeat dolorem praesentium accusamus tempore voluptas
-                    laboriosam rem atque obcaecati ut asperiores nisi quae?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo accusantium nisi placeat et fuga
-                    ratione quaerat, tempore beatae enim adipisci, laudantium blanditiis incidunt asperiores ipsa unde
-                    recusandae possimus? Quasi, beatae!
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, voluptates sequi, nihil minus rerum
-                    hic vitae ipsam fuga laborum quam ab consectetur distinctio dolorem, harum doloribus cum ullam error
-                    laboriosam.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa fugiat explicabo, fuga numquam at
-                    saepe, error tenetur adipisci sit tempora assumenda quis modi nulla perspiciatis inventore quia
-                    commodi excepturi ullam?
-
-
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis maiores iusto labore laboriosam, fugiat soluta ea officia nostrum, ut necessitatibus obcaecati laudantium, sed dolor iure tenetur pariatur neque dolore?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis maiores iusto labore laboriosam, fugiat soluta ea officia nostrum, ut necessitatibus obcaecati laudantium, sed dolor iure tenetur pariatur neque dolore?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis maiores iusto labore laboriosam, fugiat soluta ea officia nostrum, ut necessitatibus obcaecati laudantium, sed dolor iure tenetur pariatur neque dolore?
                 </p>
-
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis maiores iusto labore laboriosam, fugiat soluta ea officia nostrum, ut necessitatibus obcaecati laudantium, sed dolor iure tenetur pariatur neque dolore?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis maiores iusto labore laboriosam, fugiat soluta ea officia nostrum, ut necessitatibus obcaecati laudantium, sed dolor iure tenetur pariatur neque dolore?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis maiores iusto labore laboriosam, fugiat soluta ea officia nostrum, ut necessitatibus obcaecati laudantium, sed dolor iure tenetur pariatur neque dolore?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis maiores iusto labore laboriosam, fugiat soluta ea officia nostrum, ut necessitatibus obcaecati laudantium, sed dolor iure tenetur pariatur neque dolore?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis maiores iusto labore laboriosam, fugiat soluta ea officia nostrum, ut necessitatibus obcaecati laudantium, sed dolor iure tenetur pariatur neque dolore?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis maiores iusto labore laboriosam, fugiat soluta ea officia nostrum, ut necessitatibus obcaecati laudantium, sed dolor iure tenetur pariatur neque dolore?
+                </p>
             </div>
         </article>
     </main>
@@ -134,38 +118,42 @@
     <footer id="footer">
         <!-- Contact Section Title-->
         <h1 class="title-horizontal">
-            <span class="letter" id="contact-C">C</span>
-            <span class="letter" id="contact-O">O</span>
-            <span class="letter" id="contact-N">N</span>
-            <span class="letter" id="contact-T">T</span>
-            <span class="letter" id="contact-A">A</span>
-            <span class="letter" id="contact-C">C</span>
-            <span class="letter" id="contact-T">T</span>
+            <span id="contact-C">C</span>
+            <span id="contact-O">O</span>
+            <span id="contact-N">N</span>
+            <span id="contact-T">T</span>
+            <span id="contact-A">A</span>
+            <span id="contact-C">C</span>
+            <span id="contact-T">T</span>
         </h1>
+
         <!-- Footer component -->
         <div class="footer-component">
             <!-- Footer image-->
-            <img class="footer-image" src="crossing3.jpg" alt="footer-image" />
+            <img src="images/crossing3.jpg" alt="footer-image" />
             <!-- A Container Which Links to Professional Websites-->
             <div class="footer-icons">
-                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="linkedin-icon.png"
+                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="images/linkedin-icon.png"
                             atl="linkedin" /></a></div>
-                <div><a href="https://github.com/coderGirlSu"><img src="github-icon.png" atl="github" /></a></div>
-                <div><a href="SU ZHANG Resume.pdf"><img src="resume-icon.png"
-                            atl="resume" /></a>
+                <div><a href="https://github.com/coderGirlSu"><img src="images/github-icon.png" atl="github" /></a>
+                </div>
+                <div><a href="resume.pdf"><img src="images/resume-icon.png" atl="resume" /></a>
                 </div>
             </div>
-            <!-- Back to Top Navigation-->
-            <div class="arrownav">
+
+            <!-- Back to Top Navigation component -->
+            <div class="back-to-top">
                 <div>
-                    <a href="#top"><img src="arrow.svg" alt="arrow" /></a>
+                    <a href="#navigation-menu"><img src="images/arrow.svg" alt="arrow" /></a>
                 </div>
             </div>
 
         </div>
 
+    </footer>
+
     <!-- Link to Javascript-->
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

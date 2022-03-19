@@ -1,0 +1,322 @@
+/* General styles */
+body {
+    background-color: #ffffff;
+}
+/* All anchor links desplay no underline  */
+a {
+    text-decoration: none;
+    color: rgb(192, 145, 166);
+}
+a:visited {
+    color: rgb(192, 145, 166);
+}
+
+
+
+
+.main-image {
+    width: 100%;
+}
+h1, h2, h3 {
+    color: rgb(192, 145, 166);
+}
+section {
+    margin-bottom: 100px;
+}
+article {
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Vertical title container */
+.title-vertical {
+    margin: 0;
+    color: rgb(192, 192, 192); 
+    font-size: 5em;
+    font-weight: normal;
+    writing-mode: tb;
+    text-orientation: sideways; 
+    padding-top: 10px;
+    display: flex;
+}
+/* Horizontal title container */
+.title-horizontal {
+    margin: 0;
+    position: relative;
+    color: rgb(214, 186, 199);
+    right: 10px;
+    font-size: 5em;
+    text-align: right;
+    font-weight: normal;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+/* ****** Navigation bar component styles ***** */
+
+/* Nav bar component uses flex-box */
+nav {
+    display: flex;
+}
+/* Logo image styles */
+nav > .nav-logo img {
+    width: 45px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+/* Nav bar title styles */
+nav > .nav-title {
+    flex-grow: 1;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 15px;
+    margin-left: 15px;
+    color: #ffffff;
+}
+
+/* Nav menu bar sub-component styles */
+/* Screen size under 800px hide menu bar */
+@media screen and (max-width: 800px) {
+    nav > .navbaritem {
+        display: none;
+    }
+    nav > .nav-title {
+        visibility: hidden;
+    }
+}
+/* Add hover over menu bar items underline */
+nav > .navbaritem a:hover {
+    text-decoration: underline;
+}
+/* Menu bar items margin */
+nav > .navbaritem {
+    margin: 15px 6px 6px 6px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500; 
+}
+
+/* Navigation bar hamburger menu sub-component styles */
+/* Screen size over 800px hide hamburger menu */
+@media screen and (min-width:800px) {
+    nav .burger-icon img{
+        display: none; 
+    }
+    nav #burger-menu {
+        display: none;
+    }
+}
+/* Hover over hamburger menu items show underline */
+nav > .burger-menu-item a:hover{
+    text-decoration: underline;
+}
+/* Hamburger menu styles */
+nav > .burger-menu {
+    position: absolute;
+    display: none;
+    right: 20px;
+    top: 45px;
+    background-color: #dadada3a;
+    height: 200px;
+}
+/* Hamburger menu icon */
+nav > .burger-icon img {
+    margin-top: 15px;
+    width: 40px;
+}
+/* Hameburger menu items padding */
+nav .burger-menu-item {
+    padding: 15px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500; 
+}
+/* This class is used to control the visitilibty of the hamburger menu */
+nav > .visible {
+    display: block;
+}
+
+/* ***** End of navigation bar component styles ***** */
+
+
+
+
+
+
+
+/* ***** Two column component styles **** */
+.two-column {
+    display: flex;
+}
+/* blog component */
+.two-column .two-column-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.two-column .two-column-content > div {
+    padding: 10px;
+    max-width: 400px;
+}
+/* ***** End of two column component styles ***** */
+
+
+
+
+
+
+
+/* ***** Blog listing component styles ***** */
+
+/* blog title hover over show underline */
+.blog-list-component a:hover{
+    text-decoration: underline;
+}
+/* blog image continer */
+.blog-list-component .blog-image-continer {
+    width: 70%;
+    overflow: hidden;
+}
+/* blog image */
+.blog-list-component .blog-image-continer img {
+    width: 100%;
+    transition: transform 2s;
+}
+/* blog image continer hover over scale */
+.blog-list-component .blog-image-continer img:hover {
+    transform: scale(2);
+}
+/* viewmore link font size */
+.blog-list-component .details {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* ***** End of Blog listing component styles ***** */
+
+
+
+
+
+
+
+
+/* ***** Text with image component styles ***** */
+
+.text-with-image {
+    display: flex;
+}
+.text-with-image .text-with-image-text {
+    margin: 10px;
+    max-width: 55%;
+}
+.text-with-image .text-with-image-image {
+    overflow: hidden;
+    margin-top: 10px;
+}
+.text-with-image .text-with-image-image img {
+    max-width: 100%;
+    transition: transform 3s;
+}
+.text-with-image .text-with-image-image img:hover {
+    transform: scale(2);
+}
+
+/* End of Text with image component styles ***** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ***** Blog article component styles ***** */
+
+.article-component{
+    margin-left:10px;
+    margin-right:10px;
+}
+.article-component img{
+    width: 100%;
+    transition: transform 2s;
+}
+.article-component div{
+    width: 100%;
+    overflow: hidden;
+}
+.article-component img:hover{
+    transform: scale(2);
+}
+
+/* ***** End of Blog article component styles ***** */
+
+
+
+
+
+
+/* ***** Footer component styles ***** */
+.footer-component {
+    position: relative;
+}
+.footer-component > img {
+    width: 100%;
+    height: 100px;
+}
+.footer-component .footer-icons {
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+.footer-component .footer-icons > div {
+    margin: 20px;
+}
+.footer-component .footer-icons div:hover {
+    transform: scale(1.2);
+}
+
+/* ***** End of Footer component styles ***** */
+
+
+
+
+
+
+/* Back to top component styles */
+
+/* Back-to-top link style */
+.back-to-top img {
+    max-width: 12%;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    opacity: 0.6;
+    animation: unglow ease-in 0.2s forwards;
+}
+
+/* ***** End of back to top component styles ***** */
+
