@@ -28,7 +28,7 @@
 
             <!-- Navigation bar logo -->
             <div class="nav-logo">
-                <a href="index.html"><img src="images/SZ.svg" alt="logo" /> </a>
+                <a tabindex="1" href="index.html"><img src="images/SZ.svg" alt="logo" /> </a>
             </div>
 
             <!-- Navigation bar title -->
@@ -56,20 +56,20 @@
             </div>
 
             <!-- Navigation bar menu sub-component -->
-            <div class="navbaritem"><a href="#about">ABOUT</a></div>
-            <div class="navbaritem"><a href="#project">PROJECT</a></div>
-            <div class="navbaritem"><a href="#blog">BLOG</a></div>
-            <div class="navbaritem"><a href="#footer">CONTACT</a></div>
+            <div class="navbaritem"><a tabindex="3" href="#about">ABOUT</a></div>
+            <div class="navbaritem"><a tabindex="4" href="#project">PROJECT</a></div>
+            <div class="navbaritem"><a tabindex="5" href="#blog">BLOG</a></div>
+            <div class="navbaritem"><a tabindex="6" href="#footer">CONTACT</a></div>
 
             <!--Navigation bar hamburger menu sub-component -->
             <div class="burger-icon">
-                <img src="images/menu.png" alt="menu" onclick="burgerMenu()">
+                <img tabindex="2" src="images/menu.png" alt="menu" onkeydown="burgerMenu()" onclick="burgerMenu()">
             </div>
             <div class="burger-menu" id="burger-menu">
-                <div class="burger-menu-item"><a href="#about">ABOUT</a></div>
-                <div class="burger-menu-item"><a href="#project">PROJECT</a></div>
-                <div class="burger-menu-item"><a href="#blog">BLOG</a></div>
-                <div class="burger-menu-item"><a href="#footer">CONTACT</a></div>
+                <div class="burger-menu-item"><a tabindex="3" href="#about">ABOUT</a></div>
+                <div class="burger-menu-item"><a tabindex="4" href="#project">PROJECT</a></div>
+                <div class="burger-menu-item"><a tabindex="5" href="#blog">BLOG</a></div>
+                <div class="burger-menu-item"><a tabindex="6" href="#footer">CONTACT</a></div>
             </div>
         </nav>
 
@@ -107,33 +107,28 @@
                     <div id="about-me">
                         <h3>Introduction</h3>
                         <p>
-                            Hi, I'm Su. I am currently enrolled in a standard Full Stack Developer Course at Coder
-                            Academy
-                            and currently in my first semester.
+                            Hi, I'm Su Zhang. I am currently enrolled in a standard Full Stack Developer Course at Coder
+                            Academy and currently in my first semester.
                         </p>
                         <p>
                             Prior to Coder Academy, I had 7 yeas working experience as an Architect in China and two
-                            years
-                            of experience working as a Graphic Designer in Sydney.
+                            years of experience working as a Graphic Designer in Sydney.
                         </p>
                         <p>
-                            I always like to learn something new, so when I moved to Australia, I think it was a good
-                            opportunity to change my career. But starting over in a new country wasn't as easy as I
-                            thought,
-                            so I started learning English and studied graphic design on my own because I have 8-year
-                            painting skills and some experience with related Adobe software. That made me to decide open
-                            a
-                            small graphic design studio to start with. But as I learned more about this industry, I felt
-                            that this was not the industry I wanted to work for the rest of my life which I can enjoyed.
+                            I always like to learn something new, so when I moved to Australia, I took the
+                            opportunity to change my career. I started by learning English and studied graphic design as
+                            I have 8 years
+                            drawing skills and experience with Adobe software. I opened
+                            a small graphic design studio. Later I learned more about this industry and decided
+                            this was not the industry I wanted to work for the rest of my life which I can enjoyed.
                         </p>
                         <p>
-                            By chance in 2021, I have a deeper understanding of the IT industry, from playing the
-                            programming game playground, to finding some free courses online to learn, making websites,
-                            I
-                            began to enjoy the sense of accomplishment that this programming brings me. From one hour of
+                            By 2021, I had a deeper understanding of the IT industry. I found some free coding courses
+                            online,
+                            and I began to enjoy the sense of accomplishment from these courses. From one hour of
                             programming a day to eight hours a day, it always feels like time flies by when I'm
                             programming.
-                            In 2022, I decided to join the Coder Academy with joy and urgency to start my IT career.
+                            In 2022, I decided to join the Coder Academy to start my IT career.
                         </p>
                     </div>
                     <div>
@@ -143,10 +138,6 @@
                             <li>CSS</li>
                             <li>JavaScript</li>
                         </ul>
-
-                        <h3>Skills</h3>
-                        <ul></ul>
-
                         <h3>Employment history</h3>
                         <ul>
                             <li>2018-2021 Self-employed as a graphic designer</li>
@@ -246,11 +237,11 @@
                 <div class="two-column-content">
                     <!-- Blog listing component -->
                     <div class="blog-list-component">
-                        <a href="article1.html">
+                        <a tabindex="7" href="article1.html">
                             <h1>Cooklang - Managing Recipes in Git</h1>
                         </a>
                         <div class="details">
-                            01/01/2022 <a href="article1.html">View More</a>
+                            01/01/2022 <a tabindex="8" href="article1.html">View More</a>
                         </div>
                         <div class="blog-image-continer">
                             <img src="images/tree-small.jpeg" alt="tree" />
@@ -265,11 +256,11 @@
 
                     <!-- Blog listing component -->
                     <div class="blog-list-component">
-                        <a href="article2.html">
+                        <a tabindex="9" href="article2.html">
                             <h1>Cooklang - Managing Recipes in Git</h1>
                         </a>
                         <div class="details">
-                            01/01/2022 <a href="article2.html">View More</a>
+                            01/01/2022 <a tabindex="10" href="article2.html">View More</a>
                         </div>
                         <div class="blog-image-continer">
                             <img src="images/tree-small.jpeg" alt="tree" />
@@ -284,11 +275,11 @@
 
                     <!-- Blog listing component -->
                     <div class="blog-list-component">
-                        <a href="article3.html">
+                        <a tabindex="11" href="article3.html">
                             <h1>Cooklang - Managing Recipes in Git</h1>
                         </a>
                         <div class="details">
-                            01/01/2022 <a href="article3.html">View More</a>
+                            01/01/2022 <a tabindex="12" href="article3.html">View More</a>
                         </div>
                         <div class="blog-image-continer">
                             <img src="images/tree-small.jpeg" alt="tree" />
@@ -303,11 +294,11 @@
 
                     <!-- Blog listing component -->
                     <div class="blog-list-component">
-                        <a href="article4.html">
+                        <a tabindex="13" href="article4.html">
                             <h1>Cooklang - Managing Recipes in Git</h1>
                         </a>
                         <div class="details">
-                            01/01/2022 <a href="article4.html">View More</a>
+                            01/01/2022 <a tabindex="14" href="article4.html">View More</a>
                         </div>
                         <div class="blog-image-continer">
                             <img src="images/tree-small.jpeg" alt="tree" />
@@ -322,11 +313,11 @@
 
                     <!-- Blog listing component -->
                     <div class="blog-list-component">
-                        <a href="article5.html">
+                        <a tabindex="15" href="article5.html">
                             <h1>Cooklang - Managing Recipes in Git</h1>
                         </a>
                         <div class="details">
-                            01/01/2022 <a href="article5.html">View More</a>
+                            01/01/2022 <a tabindex="16" href="article5.html">View More</a>
                         </div>
                         <div class="blog-image-continer">
                             <img src="images/tree-small.jpeg" alt="tree" />
@@ -366,18 +357,18 @@
             <img src="images/crossing3.jpg" alt="footer-image" />
             <!-- A Container Which Links to Professional Websites-->
             <div class="footer-icons">
-                <div><a href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="images/linkedin-icon.png"
+                <div><a tabindex="17" href="https://www.linkedin.com/in/su-zhang-0079651b4/"><img src="images/linkedin-icon.png"
                             atl="linkedin" /></a></div>
-                <div><a href="https://github.com/coderGirlSu"><img src="images/github-icon.png" atl="github" /></a>
+                <div><a tabindex="18" href="https://github.com/coderGirlSu"><img src="images/github-icon.png" atl="github" /></a>
                 </div>
-                <div><a href="resume.pdf"><img src="images/resume-icon.png" atl="resume" /></a>
+                <div><a tabindex="19" href="resume.pdf"><img src="images/resume-icon.png" atl="resume" /></a>
                 </div>
             </div>
 
             <!-- Back to Top Navigation component -->
             <div class="back-to-top">
                 <div>
-                    <a href="#navigation-menu"><img src="images/arrow.svg" alt="arrow" /></a>
+                    <a tabindex="20" href="#navigation-menu"><img src="images/arrow.svg" alt="arrow" /></a>
                 </div>
             </div>
 

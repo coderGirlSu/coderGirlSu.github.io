@@ -24,12 +24,7 @@ The large heading separates each section, allowing users to quickly find the sec
 #### **Navigation**
 The navigation bar across all pages of the webstie. It is responsive, meaning it will adjust its size and behaviour based on the screen size.
 
-- Navbar - browser
 ![Navbar-browser](./docs/navbar-browser.jpeg)
-
-- Navbar - mobile
-![Navbar-mobile](./docs/navbar-mobile.jpeg)
-
 
  The logo is used as a quick return to the main page from anywhere in the site. when the user first time open the page that will show a animation next to the logo.
 
@@ -61,67 +56,51 @@ The main image of the site which is fixed under the navigation bar with `width:1
 the grey and pink colour combination fully balances personal character and professionalism. Conveying a sense of quiet and comfort to the user.
 
 
-![main image](./docs/Logo-breathe.gif)
+![main image](./docs/main-image.png)
 
 #### **About**
 The About layout has been designed in 2 parts via flexbox, the first part is title which rotated 90 degrees `text-orientation: sideways; ` on the left of the site. On the right of the site is text which desribe who am I.
 
 
-
-![about effect](./docs/about-effect.gif)
-
-
-
 -Animation
 Every 5 sections the title displays fading animations  `: fading ease-in 5s ` with grey colour when browsing which draws the user’s attention to each section as they scroll through the site.
 
-
-
-![about-title effect](./docs/Logo-breathe.gif)
-
-
-
+![about](./docs/about-effect.gif)
 
 #### **Project**
 The project section was kept simple to display the latest project at the moment. The laylot has been designed in 2 parts via flexbox, the first part is the horizontal title where located above the project image. the second part is project description which is  on the left of the image. In the future,I would like to extend this to show multiple projects.
-
-
 
 - Animation
 Every 5 sections the title displays fading animations `: fading ease-in 5s ` with pink colour when browsing which draws the user’s attention to each section as they scroll through the site.
 
 
-![project effect](./docs/Logo-breathe.gif)
+![project effect](./docs/project-effect.gif)
 
 
 #### **Blog**
 One feature of the blog article component is that it can be used inside other components.The blog Article component is shown at the left of the screen, I reused it 5 times in my blog section.
 The title has been designed horizontal  position that rotated 90 degrees `text-orientation: sideways; ` .
 
+- Animation
+Every 5 sections the title displays fading animations  `: fading ease-in 5s ` with grey colour when browsing which draws the user’s attention to each section as they scroll through the site.
+Hover over on the article title or View More link  will show underline as an invitation for the user the interact and also link to the corresponding blog.
+
+
 
 ![blog](./docs/blog-effect.gif)
 
-- Animation
-Every 5 sections the title displays fading animations  `: fading ease-in 5s ` with grey colour when browsing which draws the user’s attention to each section as they scroll through the site.
-
-
-![blog effect](./docs/Logo-breathe.gif)
 
 
 #### **Contact**
 
 The footer component is always shown at the bottom of every page. And it is always 100% width of the screen.`width:100%`.It is made up of several parts:The first part is the title which match the project title.
 The second part is the professional contact information and the last part the background image of the footer section.
-
-
-![contact](./docs/Logo-breathe.gif)
-
-
 - Animation
 Hover over the contact icon to zoom in and out and increase interaction with the user.
 
+![contact effect](./docs/contact-effect.gif)
 
-![contact icon effect](./docs/Logo-breathe.gif)
+![contact icon effect](./docs/icons-effect.gif)
 
 #### **Article Page**
 
@@ -131,7 +110,7 @@ They can also click on the logo to go back to the homepage.The article starts wi
 
 - Animation
 
-![article page effect](./docs/Logo-breathe.gif)
+![article page effect](./docs/article-effect.gif)
 
 
 ---

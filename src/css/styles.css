@@ -12,8 +12,6 @@ a:visited {
 }
 
 
-
-
 .main-image {
     width: 100%;
 }
@@ -26,19 +24,6 @@ section {
 article {
     margin-bottom: 100px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Vertical title container */
@@ -64,8 +49,6 @@ article {
     display: flex;
     justify-content: flex-end;
 }
-
-
 
 
 /* ****** Navigation bar component styles ***** */
@@ -123,7 +106,7 @@ nav > .navbaritem {
     }
 }
 /* Hover over hamburger menu items show underline */
-nav > .burger-menu-item a:hover{
+nav .burger-menu-item a:hover{
     text-decoration: underline;
 }
 /* Hamburger menu styles */
@@ -131,7 +114,7 @@ nav > .burger-menu {
     position: absolute;
     display: none;
     right: 20px;
-    top: 45px;
+    top: 35px;
     background-color: #dadada3a;
     height: 200px;
 }
