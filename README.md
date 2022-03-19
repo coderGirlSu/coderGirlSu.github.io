@@ -24,7 +24,7 @@ The large heading separates each section, allowing users to quickly find the sec
 #### **Navigation**
 The navigation bar across all pages of the webstie. It is responsive, meaning it will adjust its size and behaviour based on the screen size.
 
-![Navbar-browser](./docs/navbar-browser.jpeg)
+![Navbar-browser](./docs/navbar.png)
 
  The logo is used as a quick return to the main page from anywhere in the site. when the user first time open the page that will show a animation next to the logo.
 
@@ -37,7 +37,7 @@ The navigation bar across all pages of the webstie. It is responsive, meaning it
 The hamburger menu displays links to the other parts of the site in a vertical list instead. When the screen size drops below 800px, The navigation bar transforms into a hamburger navigation when the website is viewed on a mobile device. The menu is designed with a transparent background for enhanced design style.
 
 
-![hamburger menu](./docs/hamburger-effect.gif)
+![hamburger menu](./docs/burgermenu-effect.gif)
 
 
 
@@ -100,7 +100,6 @@ Hover over the contact icon to zoom in and out and increase interaction with the
 
 ![contact effect](./docs/contact-effect.gif)
 
-![contact icon effect](./docs/icons-effect.gif)
 
 #### **Article Page**
 
