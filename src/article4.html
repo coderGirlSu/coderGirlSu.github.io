@@ -30,7 +30,7 @@
 
             <!-- Navigation bar logo -->
             <div class="nav-logo">
-                <a href="index.html"><img src="images/SZ.svg" alt="logo" /> </a>
+                <a tabindex="1" href="index.html"><img src="images/SZ.svg" alt="logo" /> </a>
             </div>
 
             <!-- Navigation bar title -->
@@ -58,20 +58,20 @@
             </div>
 
             <!-- Navigation bar menu sub-component -->
-            <div class="navbaritem"><a href="index.html#about">ABOUT</a></div>
-            <div class="navbaritem"><a href="index.html#project">PROJECT</a></div>
-            <div class="navbaritem"><a href="index.html#blog">BLOG</a></div>
-            <div class="navbaritem"><a href="#footer">CONTACT</a></div>
+            <div class="navbaritem"><a tabindex="3" href="index.html#about">ABOUT</a></div>
+            <div class="navbaritem"><a tabindex="4" href="index.html#project">PROJECT</a></div>
+            <div class="navbaritem"><a tabindex="5" href="index.html#blog">BLOG</a></div>
+            <div class="navbaritem"><a tabindex="6" href="#footer">CONTACT</a></div>
 
             <!--Navigation bar hamburger menu sub-component -->
             <div class="burger-icon">
-                <img src="images/menu.png" alt="menu" onclick="burgerMenu()">
+                <img tabindex="2" src="images/menu.png" alt="menu" onkeydown="burgerMenu()" onclick="burgerMenu()">
             </div>
             <div class="burger-menu" id="burger-menu">
-                <div class="burger-menu-item"><a href="index.html#about">ABOUT</a></div>
-                <div class="burger-menu-item"><a href="index.html#project">PROJECT</a></div>
-                <div class="burger-menu-item"><a href="index.html#blog">BLOG</a></div>
-                <div class="burger-menu-item"><a href="#footer">CONTACT</a></div>
+                <div class="burger-menu-item"><a tabindex="3" href="index.html#about">ABOUT</a></div>
+                <div class="burger-menu-item"><a tabindex="4" href="index.html#project">PROJECT</a></div>
+                <div class="burger-menu-item"><a tabindex="5" href="index.html#blog">BLOG</a></div>
+                <div class="burger-menu-item"><a tabindex="6" href="#footer">CONTACT</a></div>
             </div>
         </nav>
 
@@ -93,7 +93,7 @@
                 <!--Blog Title-->
                 <h1>Cooklang - Managing Recipes in Git</h1>
                 <!--Blog Date-->
-                <h2>01/01/2022</h2>
+                <div class="article-date">01/01/2022</div>
                 <!--Blog Content-->
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus officiis maiores iusto labore laboriosam, fugiat soluta ea officia nostrum, ut necessitatibus obcaecati laudantium, sed dolor iure tenetur pariatur neque dolore?
