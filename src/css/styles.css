@@ -18,6 +18,10 @@ a:visited {
 h1, h2 {
     color: rgb(192, 145, 166);
 }
+p, ul {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
 section {
     margin-bottom: 100px;
 }
@@ -283,6 +287,10 @@ nav > .visible {
 }
 .footer-component .footer-icons > div {
     margin: 20px;
+    width:25%;
+}
+.footer-component .footer-icons img {
+    width:100%
 }
 .footer-component .footer-icons div:hover {
     transform: scale(1.2);
